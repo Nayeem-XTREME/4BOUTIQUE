@@ -1,0 +1,47 @@
+.content {
+    background-color: lightblue;
+    grid-row: 3 / -1;
+    grid-column: 2 / -1;
+
+    margin: 3rem;
+
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-rows: repeat(32, .2fr);
+    grid-template-columns: repeat(12, 1fr);
+
+    .box {
+        background-color: darkgreen;
+        padding: 5rem;
+    }
+    
+    &__card-1 {
+        grid-row: 1 / 20;
+        grid-column: 1 / 8;
+    }
+
+    &__card-2 {
+        grid-row: 1 / 11;
+        grid-column: 8 / -1;
+    }
+
+    &__card-3 {
+        grid-row: 11 / 20;
+        grid-column: 8 / -1;
+    }
+
+    &__card-4 {
+        grid-row: 20 / -1;
+        grid-column: 1 / 5;
+    }
+
+    &__card-5 {
+        grid-row: 20 / -1;
+        grid-column: 5 / 9;
+    }
+
+    &__card-6 {
+        grid-row: 20 / -1;
+        grid-column: 9 / -1;
+    }
+}
