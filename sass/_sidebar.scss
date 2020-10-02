@@ -1,36 +1,36 @@
 .sidebar {
+    background-color: transparent;
     grid-row: 1 / -1;
     grid-column: 1 / 2;
     
     position: fixed;
     height: 100vh;
     width: 18%;
-    padding: 3rem;
     font-size: 150%;
 
-    .logo {
+    z-index: 10;
+
+    &__container {
+        // Centering the sidebar
         position: absolute;
-        top: 3%;
         left: 50%;
-        transform: translateX(-50%);
-    }
-
-    ul {
-        list-style: none;
-        position: absolute;
         top: 50%;
-        transform: translateY(-50%);
-        margin-left: 20%;
+        transform: translate(-50%, -50%);
 
-        li a{
-            text-decoration: none;
-            color: $color-gray;
-        }
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        ul {
+            list-style: none;
+
+            li a {
+                text-decoration: none;
+                color: $color-gray;
+            }
+        } 
     }
 
-    .social {
-        position: absolute;
-        top: 90%;
-        margin-left: 20%;
-    }
 }
