@@ -1,25 +1,25 @@
-// $(document).ready(function() {
-//     // Sticky Nav
-//     $('.js--content').waypoint(function(direction) {
-//         if (direction == "down") {
-//             $('.header').addClass('sticky');
-//         } else {
-//             $('.header').removeClass('sticky');
-//         }
-//     }, {
-//         offset: '60px'
-//     });
-// })
-
-// $(document).ready(function() {
-//     $('.js--content').click(function(){
-//         $('.header').addClass('sticky');
-//     });
-// })
-
-// $('#container').fullpage();
-
 $(document).ready(function() {
+
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+      });
+    }
+
+  });
+
+
+  // Sticky Navbar
   $(window).scroll(function() {
     if ($(document).scrollTop() > 650) {
       $(".header").addClass("sticky");
@@ -27,4 +27,5 @@ $(document).ready(function() {
       $(".header").removeClass("sticky");
     }
   });
+  
 });
