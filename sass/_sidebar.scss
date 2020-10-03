@@ -12,7 +12,7 @@ $font-size-secondary: 1.2rem;
     width: 26rem;
     font-size: $font-size-primary;
 
-    z-index: 10;
+    z-index: 100;
 
     &__container {
         // Centering the sidebar
@@ -99,12 +99,10 @@ $font-size-secondary: 1.2rem;
         }
         
     }
+}
 
-
-    @media only screen and (max-width: $tablet-landscape) {
-        &__container {
-            display: none;
-        }
+@media only screen and (max-width: $tablet-landscape) {
+    .sidebar {
+        display: none;
     }
-
 }

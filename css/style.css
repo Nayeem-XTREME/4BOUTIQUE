@@ -37,7 +37,7 @@ body {
   height: 100vh;
   width: 26rem;
   font-size: 1.6rem;
-  z-index: 10; }
+  z-index: 100; }
   .sidebar__container {
     position: absolute;
     left: 50%;
@@ -93,9 +93,10 @@ body {
         background-color: #CCCCCC;
         border: none;
         outline: none; }
-  @media only screen and (max-width: 1024px) {
-    .sidebar__container {
-      display: none; } }
+
+@media only screen and (max-width: 1024px) {
+  .sidebar {
+    display: none; } }
 
 .header {
   background-color: transparent;
@@ -146,6 +147,7 @@ body {
   position: absolute;
   grid-row: 2 / 3;
   grid-column: 2 / -1;
+  z-index: -90;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -169,22 +171,109 @@ body {
     .home h1, .home h2 {
       width: 90%; } }
 
+.sidebar-fullscreen {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2.4rem;
+  transform: translateX(-100%); }
+  .sidebar-fullscreen .hamburger-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+    .sidebar-fullscreen .hamburger-menu__left {
+      margin-left: 6rem; }
+    .sidebar-fullscreen .hamburger-menu__right {
+      margin-right: 6rem; }
+    .sidebar-fullscreen .hamburger-menu a {
+      text-decoration: none; }
+  .sidebar-fullscreen .menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .sidebar-fullscreen .menu ul li {
+      list-style: none; }
+      .sidebar-fullscreen .menu ul li a {
+        text-decoration: none;
+        color: white; }
+    .sidebar-fullscreen .menu ul li:nth-child(1) {
+      margin-bottom: 2rem; }
+    .sidebar-fullscreen .menu ul li:nth-child(5) {
+      margin-bottom: 2rem; }
+    .sidebar-fullscreen .menu ul li:nth-child(6) {
+      margin-bottom: 2rem; }
+  .sidebar-fullscreen .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem; }
+    .sidebar-fullscreen .footer label {
+      margin-top: 2rem; }
+    .sidebar-fullscreen .footer a {
+      text-decoration: none;
+      color: white; }
+    .sidebar-fullscreen .footer .newsletter {
+      margin-top: 5px;
+      position: relative; }
+    .sidebar-fullscreen .footer form select {
+      color: #999999;
+      font-family: "Droid Sans Mono", "Roboto", "Open Sans", sans-serif;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: none;
+      font-size: 1.2rem;
+      border: none;
+      outline: none; }
+    .sidebar-fullscreen .footer form input[type="text"] {
+      position: relative;
+      border: 1px solid #CCCCCC;
+      background-color: transparent;
+      color: #CCCCCC;
+      font-family: "Droid Sans Mono", "Roboto", "Open Sans", sans-serif;
+      padding: .25rem 1rem; }
+    .sidebar-fullscreen .footer form button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding: 0 .5rem;
+      font-size: 1.2rem;
+      font-family: "Droid Sans Mono", "Roboto", "Open Sans", sans-serif;
+      cursor: pointer;
+      background-color: #CCCCCC;
+      border: none;
+      outline: none; }
+    .sidebar-fullscreen .footer .social {
+      margin-top: 2rem; }
+
 .content {
-  grid-row: 3 / -1;
+  grid-row: 3 / 4;
   grid-column: 2 / -1;
   margin: 3rem 3rem 3rem 0;
   display: grid;
   grid-gap: 3rem;
   grid-template-rows: .63fr .63fr 1fr;
-  grid-template-columns: repeat(12, 1fr); }
+  grid-template-columns: repeat(12, 1fr);
+  overflow-x: hidden; }
   .content .box {
     color: white;
     background-size: cover;
     background-position: center;
     position: relative; }
     .content .box h2 {
-      font-size: 28px;
-      margin-bottom: 3rem; }
+      font-size: 2.4rem;
+      margin-bottom: 2rem; }
     .content .box a {
       text-transform: uppercase;
       text-decoration: none;
@@ -198,12 +287,12 @@ body {
     .content .box .block_2 {
       position: absolute;
       top: 50%;
-      left: 10%;
+      right: 20%;
       transform: translate(0, -50%); }
     .content .box .block_3 {
       position: absolute;
       top: 50%;
-      right: 10%;
+      left: 20%;
       transform: translate(0, -50%); }
     .content .box .block_4 {
       position: absolute;
