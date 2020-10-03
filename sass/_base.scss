@@ -1,13 +1,24 @@
 // COLOR VARIABLES
+$color-landing: #333333;
 $color-gray: #999999;
 $color-gray-mid: #CCCCCC;
 $color-gray-light: #F2F2F2;
 $color-brown: #C8A985;
 $color-brown-light: #F0E3CC;
 
+$color-button: #979797;
+
 $color-main-text: white;
 
 $font-primary: 'Droid Sans Mono', 'Roboto', 'Open Sans', sans-serif;
+$font-size-desktop: 62.5%; // 10px / 16px = 62.5% = 1rem
+$font-size-tablet: 50%; // 8px / 16px = 50% = 1rem
+
+
+// MEDIA QUERIES
+$tablet-landscape: 1024px;
+$tablet-portrait: 768px;
+$mobile: 320px;
 
 *,
 *::before,
@@ -19,16 +30,26 @@ $font-primary: 'Droid Sans Mono', 'Roboto', 'Open Sans', sans-serif;
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; // 10px / 16px = 62.5% = 1rem
+    font-size: $font-size-desktop; // 10px / 16px = 62.5% = 1rem
+    // line-height: 1.6;
 }
 
 body {
     font-family: $font-primary;
+    text-transform: uppercase;
     color: $color-main-text;
 }
 
 .container {
     display: grid;
     grid-template-rows: 12.8vh 87.2vh 100vh;
-    grid-template-columns: 18% 1fr;
+    grid-template-columns: 26rem 1fr;
+
+
+    @media only screen and (max-width: $tablet-landscape) {
+        grid-template-rows: 12.8vh 87.2vh 100vh;
+        grid-template-columns: 1fr;
+
+        font-size: $font-size-tablet;
+    }
 }

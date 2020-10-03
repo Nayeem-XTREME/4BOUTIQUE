@@ -16,25 +16,12 @@
     </head>
 
     <body class="container">
-
-        <header class="header">
-            <div class="header__buttons">
-                <a href="#">
-                    <img src="./icons/Icon search.svg" alt="Search">
-                </a>
-                <a href="#">
-                    <img src="./icons/Icon heart.svg" alt="Heart">
-                </a>
-                <a href="#">
-                    <img src="./icons/Icon bag.svg" alt="">
-                </a>
-            </div>
-        </header>
-
-        <div class="sidebar">
+    
+        <section class="sidebar">
             <div class="sidebar__container">
                 <a class="item logo" href="#">
-                    <img src="./icons/4BOUTIQUE_Black.svg" alt="logo">
+                    <img class="logo_black" src="./icons/4BOUTIQUE_Black.svg" alt="logo">
+                    <img class="logo_white" src="./icons/4BOUTIQUE.svg" alt="logo">
                 </a>
     
                 <ul class="item">
@@ -55,17 +42,60 @@
                     <li> <a href="#">Contact</a> </li>
                 </ul>
     
-                <div class="item social">
-                    <a href="#"><img src="./icons/Icon facebook.svg" alt="facebook"></a>
-                    <a href="#"><img src="./icons/Icon twitter.svg" alt="twitter"></a>
-                    <a href="#"><img src="./icons/Icon google plus.svg" alt="google plus"></a>
-                    <a href="#"><img src="./icons/Icon tumblr.svg" alt="tumblr"></a>
+                <div class="item footer">
+
+                    <form>
+                        <label for="language">Language:</label>
+                        <select id="language" name="cars">
+                            <option value="en">English</option>
+                            <option value="bn">Bangla</option>
+                        </select>
+                    </form>
+
+                    <a href="#">Store locator</a>
+
+                    <label for="newsletter">Newsletter</label>
+                    <br>
+                    <form class="newsletter">
+                        <input type="text">
+                        <button><img src="./icons/Arrow_Right.svg" alt="Submit"></button>
+                    </form>
+                    <br>
+
+                    <div class="social">
+                        <a href="#"><img src="./icons/Icon facebook.svg" alt="facebook"></a>
+                        <a href="#"><img src="./icons/Icon twitter.svg" alt="twitter"></a>
+                        <a href="#"><img src="./icons/Icon google plus.svg" alt="google plus"></a>
+                        <a href="#"><img src="./icons/Icon tumblr.svg" alt="tumblr"></a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="header">
+
+            <div class="header__logo header__logo__white">
+                <a href="#"><img src="./icons/Mobile Menu.svg" alt="Mobile Menu"></a>
+                <a href="#"><img src="./icons/4BOUTIQUE.svg" alt="4BOUTIQUE"></a>
+            </div>
+
+            <div class="header__buttons">
+                <a href="#">
+                    <img src="./icons/Icon search.svg" alt="Search">
+                </a>
+                <a href="#">
+                    <img src="./icons/Icon heart.svg" alt="Heart">
+                </a>
+                <a href="#">
+                    <img src="./icons/Icon bag.svg" alt="">
+                </a>
+            </div>
+        </section>
 
         <section class="home">
-            
+            <h1>NEW F/W 2015 COLLECTION</h1>
+            <h2>NULLA VITAE ELIT LIBERO, A PHARETRA AUGUE MOLLIS INTERDUM.</h2>
+            <a href="#">Shop now</a>
         </section>
 
         <section class="content">
@@ -110,6 +140,14 @@
                 </a>
             </div>
         </section>
+
+
+
+        <!-- <script src="//code.jquery.com/jquery-3.2.0.min.js"></script> 
+        <script src='./jquery/vendors/jquery.fullpage.min.js'></script> 
+        <script type="text/javascript">
+            $('.container').fullpage();
+        </script> -->
     </body>
 
 </html>

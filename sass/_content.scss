@@ -74,7 +74,7 @@
     }
 
     &__block {
-        width: 80%;
+        width: 90%;
         // padding: 1rem;
         text-align: center;
     }
@@ -119,5 +119,11 @@
         grid-column: 9 / -1;
 
         background-image: linear-gradient(rgba($color-gray-mid, .7), rgba(black, .7)), url('../img/people-man-travel-fashion.jpg');
+    }
+
+
+    @media only screen and (max-width: $tablet-landscape) {
+        grid-column: 1 / -1;
+        margin-left: 3rem;
     }
 }
