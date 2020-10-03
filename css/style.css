@@ -33,38 +33,37 @@ body {
   background-color: transparent;
   grid-row: 1 / 2;
   grid-column: 1 / 2;
-  position: fixed;
-  height: 100vh;
+  position: relative;
   width: 26rem;
   font-size: 1.6rem;
   z-index: 100; }
   .sidebar__container {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 95vh;
+    transform: translateX(-50%);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start; }
+    align-items: flex-start;
+    padding-bottom: 3rem;
+    padding-top: 3rem; }
     .sidebar__container .item {
       margin: 10% 0; }
-    .sidebar__container .logo_black {
-      display: none; }
     .sidebar__container ul {
       list-style: none; }
       .sidebar__container ul li a {
         text-decoration: none;
-        color: #999999; }
+        color: white; }
     .sidebar__container .footer {
       font-size: 1.2rem; }
       .sidebar__container .footer a {
         text-decoration: none;
-        color: #999999; }
-      .sidebar__container .footer .newsletter {
-        position: relative;
+        color: white; }
+      .sidebar__container .footer label {
         margin-top: 30%; }
+      .sidebar__container .footer .newsletter {
+        position: relative; }
       .sidebar__container .footer form select {
         color: #999999;
         font-family: "Droid Sans Mono", "Roboto", "Open Sans", sans-serif;
@@ -96,6 +95,76 @@ body {
 
 @media only screen and (max-width: 1024px) {
   .sidebar {
+    display: none; } }
+
+.sidebar-black {
+  line-height: 1.6;
+  background-color: transparent;
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  position: relative;
+  width: 26rem;
+  font-size: 1.6rem;
+  z-index: 100;
+  color: black; }
+  .sidebar-black__container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 3rem;
+    padding-top: 3rem; }
+    .sidebar-black__container .item {
+      margin: 10% 0; }
+    .sidebar-black__container ul {
+      list-style: none; }
+      .sidebar-black__container ul li a {
+        text-decoration: none;
+        color: #999999; }
+    .sidebar-black__container .footer {
+      font-size: 1.2rem; }
+      .sidebar-black__container .footer a {
+        text-decoration: none;
+        color: black; }
+      .sidebar-black__container .footer label {
+        margin-top: 30%; }
+      .sidebar-black__container .footer .newsletter {
+        position: relative; }
+      .sidebar-black__container .footer form select {
+        color: #999999;
+        font-family: "Droid Sans Mono", "Roboto", "Open Sans", sans-serif;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+        font-size: 1.2rem;
+        border: none;
+        outline: none; }
+      .sidebar-black__container .footer form input[type="text"] {
+        position: relative;
+        border: 1px solid #CCCCCC;
+        background-color: transparent;
+        color: #999999;
+        font-family: "Droid Sans Mono", "Roboto", "Open Sans", sans-serif;
+        padding: .25rem 1rem; }
+      .sidebar-black__container .footer form button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 0 .5rem;
+        font-size: 1.2rem;
+        font-family: "Droid Sans Mono", "Roboto", "Open Sans", sans-serif;
+        cursor: pointer;
+        background-color: #CCCCCC;
+        border: none;
+        outline: none; }
+
+@media only screen and (max-width: 1024px) {
+  .sidebar-black {
     display: none; } }
 
 .header {
@@ -172,8 +241,8 @@ body {
       width: 90%; } }
 
 .sidebar-fullscreen {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   position: fixed;
   background-color: black;
   width: 100%;
@@ -181,7 +250,7 @@ body {
   z-index: 999;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-size: 2.4rem;
   transform: translateX(-100%); }
