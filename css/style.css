@@ -216,8 +216,7 @@ body {
   .header__buttons {
     position: absolute;
     right: 4rem;
-    top: 4rem;
-    transform: translate(0, 0); }
+    top: 4rem; }
     .header__buttons a {
       text-decoration: none;
       margin-left: 1rem; }
@@ -232,6 +231,19 @@ body {
         margin-left: 4rem; }
         .header__logo a:last-child {
           margin-left: 2rem; } }
+  @media only screen and (max-width: 400px) {
+    .header__logo {
+      margin-top: 3rem;
+      margin-left: 3rem; }
+      .header__logo a img {
+        height: 1rem; }
+      .header__logo a .header__logo--logo {
+        height: 1.5rem; }
+    .header__buttons {
+      right: 3rem;
+      top: 3rem; }
+      .header__buttons a img {
+        width: 2rem; } }
   @media only screen and (max-width: 320px) {
     .header__logo {
       margin-left: 2rem;
@@ -295,6 +307,7 @@ body {
   background-image: linear-gradient(rgba(51, 51, 51, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hugo-boss-black-ss-2012-mark-vanderloo-3.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: absolute;
   grid-row: 2 / 3;
   grid-column: 2 / -1;
@@ -335,6 +348,13 @@ body {
         font-size: 3.2rem; }
       .home h2 {
         font-size: 1.6rem; } }
+  @media only screen and (max-width: 400px) {
+    .home h1 {
+      font-size: 2.8rem; }
+    .home h2 {
+      font-size: 1.2rem; }
+    .home a {
+      font-size: 1rem; } }
   @media only screen and (max-width: 320px) {
     .home {
       height: 100vh; }
@@ -539,6 +559,13 @@ body {
         font-size: 2rem; }
       .content .box .block_1 h2 {
         font-size: 2.4rem; } }
+  @media only screen and (max-width: 400px) {
+    .content .box h2 {
+      font-size: 1.6rem; }
+    .content .box .block_1 h2 {
+      font-size: 2rem; }
+    .content .box a {
+      font-size: .9rem; } }
   @media only screen and (max-width: 320px) {
     .content {
       grid-template-rows: 23rem repeat(2, 15.2rem) repeat(3, 30rem);
