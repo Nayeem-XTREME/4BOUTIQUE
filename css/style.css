@@ -588,3 +588,38 @@ body {
       .content__card-6 {
         grid-row: 6 / 7;
         grid-column: 1 / -1; } }
+
+.icons-navbar:link img {
+  transition: transform 0.2s; }
+
+.icons-navbar:hover img {
+  transform: scale(1.5); }
+
+.icons-navbar:focus {
+  outline: none; }
+
+.icons-sidebar:link img {
+  transition: all 0.2s; }
+
+.icons-sidebar:hover img {
+  transform: translateY(-3px); }
+
+.icons-sidebar:active img {
+  border: none;
+  transform: translateY(-1px); }
+
+.icons-sidebar:focus {
+  outline: none; }
+
+.sidebar-items li a:link {
+  transition: all 0.2s; }
+
+.sidebar-items li a:hover {
+  color: #C8A985;
+  font-size: 2rem; }
+
+.sidebar-items li a:active {
+  transform: translateY(-1px); }
+
+.sidebar-items li a:focus {
+  outline: none; }

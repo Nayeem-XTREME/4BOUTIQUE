@@ -1,0 +1,55 @@
+.icons-navbar {
+    &:link {
+        img {
+            transition: transform 0.2s;
+        }
+    }
+    &:hover {
+        img {
+            transform: scale(1.5);
+        }
+    }
+    &:focus { outline: none; }
+}
+
+.icons-sidebar {
+    &:link {
+        img {
+            transition: all 0.2s;
+        }
+    }
+
+    &:hover {
+        img {
+            transform: translateY(-3px);
+        }
+    }
+
+    &:active {
+        img {
+            border: none;
+             transform: translateY(-1px);
+        }
+    }
+    &:focus { outline: none; }
+}
+
+.sidebar-items {
+    li {
+        a {
+            &:link {
+                transition: all 0.2s;
+            }
+
+            &:hover {
+                color: $color-brown;
+                font-size: 2rem;
+            }
+
+            &:active {
+                transform: translateY(-1px);
+            }
+            &:focus { outline: none; }
+        }
+    }
+}
