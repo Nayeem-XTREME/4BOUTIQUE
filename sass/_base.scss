@@ -70,6 +70,14 @@ body {
 
         font-size: $font-size-tablet;
     }
+
+    @media only screen and (max-width: $tablet-portrait) {
+        grid-template-rows: 6vh 40vh;
+        grid-template-columns: 1fr;
+
+        font-size: $font-size-tablet;
+    }
+
 }
 
 .row-2 {
@@ -79,6 +87,13 @@ body {
 
     @media only screen and (max-width: $tablet-landscape) {
         grid-template-rows: 100vh;
+        grid-template-columns: 1fr;
+
+        font-size: $font-size-tablet;
+    }
+
+    @media only screen and (max-width: $tablet-portrait) {
+        grid-template-rows: 54vh;
         grid-template-columns: 1fr;
 
         font-size: $font-size-tablet;

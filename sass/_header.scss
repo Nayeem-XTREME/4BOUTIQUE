@@ -6,13 +6,15 @@
 
     z-index: 10;
 
-    // &__black {
-    //     display: none;
-    // }
-
     &__logo {
         position: absolute;
         display: none;
+
+        a {
+            .header__logo--logo {
+                height: 2rem;
+            }
+        }
     }
 
     &__buttons {

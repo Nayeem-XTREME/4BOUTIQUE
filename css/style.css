@@ -27,6 +27,11 @@ body {
       grid-template-rows: 12.8vh 87.2vh;
       grid-template-columns: 1fr;
       font-size: 50%; } }
+  @media only screen and (max-width: 768px) {
+    .row-1 {
+      grid-template-rows: 6vh 40vh;
+      grid-template-columns: 1fr;
+      font-size: 50%; } }
 
 .row-2 {
   display: grid;
@@ -35,6 +40,11 @@ body {
   @media only screen and (max-width: 1024px) {
     .row-2 {
       grid-template-rows: 100vh;
+      grid-template-columns: 1fr;
+      font-size: 50%; } }
+  @media only screen and (max-width: 768px) {
+    .row-2 {
+      grid-template-rows: 54vh;
       grid-template-columns: 1fr;
       font-size: 50%; } }
 
@@ -190,6 +200,8 @@ body {
   .header__logo {
     position: absolute;
     display: none; }
+    .header__logo a .header__logo--logo {
+      height: 2rem; }
   .header__buttons {
     position: absolute;
     right: 4rem;
@@ -224,7 +236,7 @@ body {
         margin-top: -1rem; } }
 
 .home {
-  background-image: linear-gradient(rgba(51, 51, 51, 0.7), rgba(0, 0, 0, 0.7)), url("../img/3907c41616c1bdec6a582573b1915b86.jpg");
+  background-image: linear-gradient(rgba(51, 51, 51, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hugo-boss-black-ss-2012-mark-vanderloo-3.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -255,6 +267,15 @@ body {
   @media only screen and (max-width: 1024px) {
     .home h1, .home h2 {
       width: 90%; } }
+  @media only screen and (max-width: 768px) {
+    .home {
+      height: 46vh; }
+      .home h1, .home h2 {
+        width: 90%; }
+      .home h1 {
+        font-size: 3.2rem; }
+      .home h2 {
+        font-size: 1.6rem; } }
 
 .sidebar-fullscreen {
   padding-top: 4rem;
@@ -263,7 +284,7 @@ body {
   background-color: black;
   width: 100%;
   height: 100vh;
-  z-index: 999;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -367,8 +388,8 @@ body {
     .content .box .block_1 {
       position: absolute;
       top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
+      left: 10%;
+      transform: translate(-10%, -50%); }
     .content .box .block_2 {
       position: absolute;
       top: 50%;
@@ -426,3 +447,7 @@ body {
       grid-column: 1 / -1;
       margin-left: 3rem;
       margin-top: 10rem; } }
+  @media only screen and (max-width: 768px) {
+    .content {
+      grid-gap: .2rem;
+      margin: .2rem; } }
