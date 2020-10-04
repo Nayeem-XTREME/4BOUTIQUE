@@ -470,10 +470,6 @@ body {
 .icons-navbar:focus {
   outline: none; }
 
-.header__buttons__white {
-  display: flex;
-  align-items: center; }
-
 .icons-sidebar:link img {
   transition: all 0.2s; }
 
@@ -491,7 +487,7 @@ body {
   transition: all 0.2s; }
 
 .sidebar-items li a:hover {
-  color: #e77427;
+  color: #C8A985;
   font-size: 2rem; }
 
 .sidebar-items li a:active {
