@@ -1,4 +1,4 @@
-/*
+
 .icons-navbar{
     &:link{
         img{
@@ -7,8 +7,7 @@
     }
     &:hover{
         img{
-            transform: scale(2);
-            transition: transform 0.2s;
+            transform: scale(1.5);
         }
     }
     &:focus { outline: none; }
@@ -16,16 +15,10 @@
 
 
 
-
-*/
-
-
-
 .header__buttons__white{
     display: flex;
     align-items: center;
 }
-
 
 
 
@@ -40,7 +33,6 @@
     &:hover{
         img{
             transform: translateY(-3px);
-            transform: scale(1.2);
         }
     }
 
@@ -53,5 +45,28 @@
     &:focus { outline: none; }
 }
 
+
+
+
+
+.sidebar-items{
+    li{
+        a{
+            &:link{
+                transition: all 0.2s;
+            }
+
+            &:hover{
+                color: rgb(231, 116, 39);
+                font-size: 2rem;
+            }
+
+            &:active{
+                transform: translateY(-1px);
+            }
+            &:focus { outline: none; }
+        }
+    }
+}
 
 
