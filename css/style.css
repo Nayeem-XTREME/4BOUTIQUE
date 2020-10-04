@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: "Droid Sans Mono", "Roboto", "Open Sans", sans-serif;
+  font-weight: 100;
   text-transform: uppercase;
   color: white; }
 
@@ -249,6 +250,7 @@ body {
   justify-content: center;
   align-items: center; }
   .home h1, .home h2 {
+    font-weight: 100;
     text-align: center;
     width: 65%; }
   .home h1 {
@@ -379,7 +381,8 @@ body {
     position: relative; }
     .content .box h2 {
       font-size: 2.4rem;
-      margin-bottom: 2rem; }
+      font-weight: 100;
+      margin-bottom: 1.5rem; }
     .content .box a {
       text-transform: uppercase;
       text-decoration: none;
@@ -446,8 +449,14 @@ body {
     .content {
       grid-column: 1 / -1;
       margin-left: 3rem;
-      margin-top: 10rem; } }
+      margin-top: 10rem;
+      padding-bottom: 3rem;
+      border-bottom: 1.5px solid #C8A985; } }
   @media only screen and (max-width: 768px) {
     .content {
       grid-gap: .2rem;
-      margin: .2rem; } }
+      margin: .2rem;
+      padding-bottom: 0;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+      border-bottom: 1.5px solid #C8A985; } }

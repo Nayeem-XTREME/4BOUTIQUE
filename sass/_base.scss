@@ -36,6 +36,7 @@ html {
 
 body {
     font-family: $font-primary;
+    font-weight: 100;
     text-transform: uppercase;
     color: $color-main-text;
 }
@@ -44,20 +45,6 @@ body {
     display: grid;
     grid-template-rows: repeat(2, 100vh);
 }
-
-// .container {
-//     display: grid;
-//     grid-template-rows: 12.8vh 87.2vh 100vh;
-//     grid-template-columns: 26rem 1fr;
-
-
-//     @media only screen and (max-width: $tablet-landscape) {
-//         grid-template-rows: 12.8vh 87.2vh 100vh;
-//         grid-template-columns: 1fr;
-
-//         font-size: $font-size-tablet;
-//     }
-// }
 
 .row-1 {
     display: grid;
