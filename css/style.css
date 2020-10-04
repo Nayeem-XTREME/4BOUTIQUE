@@ -460,3 +460,41 @@ body {
       padding-bottom: 1rem;
       margin-bottom: 2rem;
       border-bottom: 1.5px solid #C8A985; } }
+
+/*
+.icons-navbar{
+    &:link{
+        img{
+            transition: transform 0.2s;
+        }
+    }
+    &:hover{
+        img{
+            transform: scale(2);
+            transition: transform 0.2s;
+        }
+    }
+    &:focus { outline: none; }
+}
+
+
+
+
+*/
+.header__buttons__white {
+  display: flex;
+  align-items: center; }
+
+.icons-sidebar:link img {
+  transition: all 0.2s; }
+
+.icons-sidebar:hover img {
+  transform: translateY(-3px);
+  transform: scale(1.2); }
+
+.icons-sidebar:active img {
+  border: none;
+  transform: translateY(-1px); }
+
+.icons-sidebar:focus {
+  outline: none; }

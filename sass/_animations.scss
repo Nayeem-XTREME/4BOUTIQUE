@@ -1,0 +1,57 @@
+/*
+.icons-navbar{
+    &:link{
+        img{
+            transition: transform 0.2s;
+        }
+    }
+    &:hover{
+        img{
+            transform: scale(2);
+            transition: transform 0.2s;
+        }
+    }
+    &:focus { outline: none; }
+}
+
+
+
+
+*/
+
+
+
+.header__buttons__white{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+.icons-sidebar{
+    &:link{
+        img{
+            transition: all 0.2s;
+        }
+    }
+
+    &:hover{
+        img{
+            transform: translateY(-3px);
+            transform: scale(1.2);
+        }
+    }
+
+    &:active{
+        img{
+            border: none;
+             transform: translateY(-1px);
+        }
+    }
+    &:focus { outline: none; }
+}
+
+
+
