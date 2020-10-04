@@ -10,12 +10,17 @@
     grid-template-columns: repeat(12, 1fr);
 
     overflow-x: hidden;
+    overflow-y: hidden;
 
     .box {
         color: white;
         background-size: cover;
         background-position: center;
         position: relative;
+
+        overflow-x: hidden;
+        overflow-y: hidden;
+        
         h2 {
             font-size: 2.4rem;
             font-weight: 100;
@@ -26,7 +31,7 @@
             text-transform: uppercase;
             text-decoration: none;
             color: $color-main-text;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         .block_1 {
@@ -34,6 +39,14 @@
             top: 50%;
             left: 10%;
             transform: translate(-10%, -50%);
+
+            h2 {
+                font-size: 2.8rem;
+            }
+
+            a {
+                font-size: 1.2rem;
+            }
         }
 
         .block_2 {
@@ -128,7 +141,7 @@
     @media only screen and (max-width: $tablet-landscape) {
         grid-column: 1 / -1;
         margin-left: 3rem;
-        margin-top: 10rem;
+        margin-top: 8rem;
         padding-bottom: 3rem;
 
         border-bottom: 1.5px solid #C8A985;
@@ -142,5 +155,48 @@
         margin-bottom: 2rem;
 
         border-bottom: 1.5px solid #C8A985;
+
+        .box h2 {
+            font-size: 2rem;
+        }
+
+        .box .block_1 h2 {
+            font-size: 2.4rem;
+        }
+    }
+
+    @media only screen and (max-width: $mobile) {
+        grid-template-rows: 23rem repeat(2, 15.2rem) repeat(3, 30rem);
+        grid-template-columns: 1fr;
+
+        &__card-1 {
+            grid-row: 1 / 2;
+            grid-column: 1 / -1;
+        }
+    
+        &__card-2 {
+            grid-row: 2 / 3;
+            grid-column: 1 / -1;
+        }
+    
+        &__card-3 {
+            grid-row: 3 / 4;
+            grid-column: 1 / -1;
+        }
+    
+        &__card-4 {
+            grid-row: 4 / 5;
+            grid-column: 1 / -1;
+        }
+    
+        &__card-5 {
+            grid-row: 5 / 6;
+            grid-column: 1 / -1;
+        }
+    
+        &__card-6 {
+            grid-row: 6 / 7;
+            grid-column: 1 / -1;
+        }
     }
 }

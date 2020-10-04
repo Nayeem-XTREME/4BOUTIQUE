@@ -65,6 +65,11 @@ body {
         font-size: $font-size-tablet;
     }
 
+    @media only screen and (max-width: $mobile) {
+        grid-template-rows: 12.8vh 87.2vh;
+        grid-template-columns: 1fr;
+    }
+
 }
 
 .row-2 {
@@ -84,5 +89,10 @@ body {
         grid-template-columns: 1fr;
 
         font-size: $font-size-tablet;
+    }
+
+    @media only screen and (max-width: $mobile) {
+        grid-template-rows: 100%;
+        grid-template-columns: 1fr;
     }
 }

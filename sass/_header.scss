@@ -6,6 +6,10 @@
 
     z-index: 10;
 
+    .sticky-mobile-logo {
+        display: none;;
+    }
+
     &__logo {
         position: absolute;
         display: none;
@@ -21,7 +25,7 @@
 
         position: absolute;
         right: 4rem;
-        top: 5rem;
+        top: 4rem;
         transform: translate(0, 0);
 
         a {
@@ -39,15 +43,62 @@
             justify-content: flex-start;
             align-items: center;
 
-            margin-top: 5rem;
+            margin-top: 4rem;
             margin-left: 4rem;
             
             a:last-child {
                 margin-left: 2rem;
             }
         }
-        
     }
+
+    @media only screen and (max-width: $mobile) {
+        &__logo {
+            margin-left: 2rem;
+            margin-top: 2.25rem;
+
+            &--mobile {
+                height: 1rem;
+            }
+            a {
+                .header__logo--logo {  
+                    display: none;
+                    height: 1.3rem;
+                }
+            }
+
+            a:first-child::after {
+                content: url('../icons/Icon\ search_small.svg');
+                position: absolute;
+                top: -.45rem;
+                left: 2rem;
+                width: 50%;
+            }
+    
+        }
+
+        &__buttons {
+
+            position: absolute;
+            right: 1.5rem;
+            top: 1.7rem;
+    
+            a {
+                text-decoration: none;
+                margin-left: 0;
+                
+                img {
+                    height: 2rem;
+                }
+            }
+
+            a:first-child {
+                display: none;
+            }
+        }
+    }
+
+
 }
 
 
@@ -57,7 +108,7 @@
     .sticky {
         position: fixed;
         width: 100%;
-        height: 10rem;
+        height: 8rem;
         background-color: rgba(255, 255, 255, 0.5);
 
         .header__white {
@@ -69,6 +120,38 @@
 
             .header__buttons {
                 margin-top: -1rem;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    
+    // Sticky
+    .sticky {
+        height: 3.6rem;
+        background-color: white;
+        .header__black {
+
+            .sticky-mobile-logo {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            
+                img {
+                    height: 1.5rem;
+                }
+            }
+
+            a:first-child::after {
+                content: url('../icons/Icon\ search_Black_small.svg');
+                position: absolute;
+                top: -.45rem;
+                left: 2rem;
+                width: 50%;
             }
         }
 
