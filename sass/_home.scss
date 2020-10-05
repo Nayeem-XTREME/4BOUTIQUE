@@ -2,6 +2,7 @@
     background-image: linear-gradient(rgba($color-landing, .8), rgba(black, .8)), url('../img/hugo-boss-black-ss-2012-mark-vanderloo-3.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 
     position: absolute;
     grid-row: 2 / 3;
@@ -15,7 +16,12 @@
     justify-content: center;
     align-items: center;
 
+    .mobile-logo {
+        display: none;
+    }
+
     h1, h2 {
+        font-weight: 100;
         text-align: center;
         width: 65%;
     }
@@ -63,6 +69,41 @@
             font-size: 1.6rem;
         }
     
+    }
+
+    @media only screen and (max-width: $pre-mobile) {
+
+        h1 {
+            font-size: 2.8rem;
+        }
+    
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        a {
+            font-size: 1rem;
+        }
+    
+    }
+
+    @media only screen and (max-width: $mobile) {
+        height: 100vh;
+
+        h2 {
+            display: none;
+        }
+
+        .mobile-logo {
+            display: inline-block;
+            position: absolute;
+
+            top: 2rem;
+            
+            img {
+                height: 1.5rem;
+            }
+        }
     }
 
 }
