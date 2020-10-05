@@ -1,7 +1,7 @@
 #ham-nav.sidebar-fullscreen {
 
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
 
     position: fixed;
     background-color: black;
@@ -19,7 +19,7 @@
     font-size: 2.4rem;
 
     // Animate here
-    transform: translateX(-200%);
+    transform: translateX(-100%);
 
     .hamburger-menu {
         display: flex;
@@ -28,16 +28,22 @@
         width: 100%;
 
         &__left {
-            margin-left: 6rem;
+            margin-left: 4rem;
         }
 
         &__right {
-            margin-right: 6rem;
+            margin-top: .5rem;
+            margin-right: 4rem;
         }
 
         a {
             text-decoration: none;
         }
+    }
+
+    // Special Mobile Menu
+    .special-menu {
+        display: none;
     }
 
     .menu {
@@ -61,11 +67,11 @@
                 margin-bottom: 2rem;
             }
 
-            li:nth-child(5) {
+            li:nth-child(6) {
                 margin-bottom: 2rem;
             }
 
-            li:nth-child(6) {
+            li:nth-child(8) {
                 margin-bottom: 2rem;
             }
         }
@@ -133,6 +139,70 @@
 
         .social {
             margin-top: 2rem;
+        }
+    }
+
+    @media only screen and (max-width: $pre-mobile) {
+        font-size: 1.6rem;
+        .hamburger-menu {
+            &__left {
+                a img {
+                    height: 1.6rem;
+                }
+            }
+            &__right {
+                margin-top: 0;
+            }
+        }
+        
+    }
+
+    @media only screen and (max-width: $mobile) {
+        .hamburger-menu {
+            margin-top: -2rem;
+            &__left {
+                a img {
+                    height: 1.6rem;
+                }
+
+                a:nth-child(2) {
+                    position: absolute;
+                    left: 50%;
+                    top: 1.9rem;
+                    transform: translate(-50%, 0);
+                }
+            }
+
+            &__right {
+                margin-top: 0;
+
+                a:not(:first-child) {
+                    display: none;
+                }
+            }
+        }
+
+        .special-menu {
+            position: absolute;
+            margin-top: 1.7rem;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+
+            a {
+                display: flex;
+                justify-content: center;
+                background-color: gray;
+                height: 10.6rem;
+                width: 100%;
+
+                margin: 1px;
+            }
+        }
+
+        .menu {
+            margin-top: 11.5rem;
         }
     }
 }
