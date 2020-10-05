@@ -515,3 +515,22 @@ body {
   100% {
     transform: scale(1);
     box-shadow: none; } }
+
+.content {
+  background-size: cover;
+  overflow: hidden; }
+  .content__card-1 {
+    overflow: hidden;
+    background-position: center;
+    opacity: 0.8;
+    transition: all 1s; }
+  .content__card-1:hover {
+    opacity: 1;
+    transform: scale(1.2); }
+  .content__card-2 {
+    background-position: center;
+    opacity: 0.8;
+    transition: all 1s; }
+  .content__card-2:hover {
+    opacity: 1;
+    transform: scale(1.2); }
