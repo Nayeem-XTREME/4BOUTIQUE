@@ -1,4 +1,4 @@
-.sidebar-fullscreen {
+#ham-nav.sidebar-fullscreen {
 
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -135,4 +135,11 @@
             margin-top: 2rem;
         }
     }
+}
+
+#ham-nav.visible {
+    transform: translateX(0);
+}
+#ham-nav.cross-screen {
+    transform: translateX(-100%);
 }

@@ -29,3 +29,21 @@ $(document).ready(function() {
   });
   
 });
+
+// Fullscreen Sidebar (Raisa)
+$(function() {
+  $('#ham').on('click', function() {
+    $('#ham-nav').removeClass('cross-screen');
+    $('#ham-nav').toggleClass('visible');
+  });
+
+  $('#ham-black').on('click', function() {
+    $('#ham-nav').removeClass('cross-screen');
+    $('#ham-nav').toggleClass('visible');
+  });
+
+  $('#ham-cross').on('click', function() {
+    $('#ham-nav').removeClass('visible');    
+    $('#ham-nav').toggleClass('cross-screen');
+  });
+});
