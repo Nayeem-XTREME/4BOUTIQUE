@@ -90,31 +90,39 @@
     }
 }
 
+
+
+
+
+
 .content{
+    height: 100%;
+    width: 100%;
     background-size: cover;
     overflow: hidden;
 
     &__card-1 {  
-        overflow: hidden;
+        background-size: cover;
         background-position: center;
-        opacity: 0.8;
+        opacity: 0.6;
         transition: all 1s;
     }
 
     &__card-1:hover {
         opacity: 1;
         transform: scale(1.2);
+
     }
 
     &__card-2 {  
         background-position: center;
-        opacity: 0.8;
+        opacity: 0.5;
         transition: all 1s;
     }
 
     &__card-2:hover {
         opacity: 1;
-        transform: scale(1.2);
+        //transform: scale(1.2);
     }
 }
 

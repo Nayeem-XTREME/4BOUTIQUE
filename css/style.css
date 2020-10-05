@@ -517,20 +517,21 @@ body {
     box-shadow: none; } }
 
 .content {
+  height: 100%;
+  width: 100%;
   background-size: cover;
   overflow: hidden; }
   .content__card-1 {
-    overflow: hidden;
+    background-size: cover;
     background-position: center;
-    opacity: 0.8;
+    opacity: 0.6;
     transition: all 1s; }
   .content__card-1:hover {
     opacity: 1;
     transform: scale(1.2); }
   .content__card-2 {
     background-position: center;
-    opacity: 0.8;
+    opacity: 0.5;
     transition: all 1s; }
   .content__card-2:hover {
-    opacity: 1;
-    transform: scale(1.2); }
+    opacity: 1; }
