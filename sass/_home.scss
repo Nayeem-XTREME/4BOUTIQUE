@@ -42,20 +42,27 @@
         color: white;
     }
 
-    .dot {
-        height: 10px;
-        width: 10px;
-        margin: 0 2px;
-        background-color: #fff;
-        border-radius: 50%;
-        display: inline-block;
-      }
-      
-      .active {
-        transform: scale(2);
-        border: 1px solid #fff;
-        background: transparent;
-      }
+
+    .dots {
+        margin-left: 90%;
+        transform: translateY(-50%);
+
+        .dot {
+            height: 8px;
+            width: 8px;
+            margin: 12px 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: block;
+          }
+
+          .active {
+            transform: scale(2);
+            border: 1px solid #fff;
+            background: transparent;
+          }
+    }
+    
       
       /* Fading animation */
       .fade {
@@ -94,6 +101,19 @@
         h2 {
             font-size: 1.6rem;
         }
+
+        .dots {
+            margin-left: 0;
+            margin-top: 8rem;
+            transform: translateY(0);
+    
+            .dot {
+                height: 7px;
+                width: 7px;
+                margin: 10px 8px;
+                display: inline-block;
+              }
+        }
     
     }
 
@@ -109,6 +129,16 @@
 
         a {
             font-size: 1rem;
+        }
+        .dots {
+            margin-top: 5rem;
+    
+            .dot {
+                height: 4px;
+                width: 4px;
+                margin: 5px 4px;
+                display: inline-block;
+              }
         }
     
     }

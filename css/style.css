@@ -59,7 +59,7 @@ body {
   grid-column: 1 / 2;
   position: relative;
   width: 26rem;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   z-index: 100; }
   .sidebar__container {
     position: absolute;
@@ -80,7 +80,7 @@ body {
         text-decoration: none;
         color: white; }
     .sidebar__container .footer {
-      font-size: 1.2rem; }
+      font-size: 1rem; }
       .sidebar__container .footer a {
         text-decoration: none;
         color: white; }
@@ -94,7 +94,7 @@ body {
         text-transform: uppercase;
         background-color: transparent;
         border: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
         border: none;
         outline: none; }
       .sidebar__container .footer form input[type="text"] {
@@ -110,7 +110,7 @@ body {
         top: 0;
         bottom: 0;
         padding: 0 .5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-family: "Droid Sans Mono", "Roboto", "Open Sans", sans-serif;
         cursor: pointer;
         background-color: #CCCCCC;
@@ -128,7 +128,7 @@ body {
   grid-column: 1 / 2;
   position: relative;
   width: 26rem;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   z-index: 100;
   color: black; }
   .sidebar-black__container {
@@ -150,7 +150,7 @@ body {
         text-decoration: none;
         color: #999999; }
     .sidebar-black__container .footer {
-      font-size: 1.2rem; }
+      font-size: 1rem; }
       .sidebar-black__container .footer a {
         text-decoration: none;
         color: black; }
@@ -164,7 +164,7 @@ body {
         text-transform: uppercase;
         background-color: transparent;
         border: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
         border: none;
         outline: none; }
       .sidebar-black__container .footer form input[type="text"] {
@@ -180,7 +180,7 @@ body {
         top: 0;
         bottom: 0;
         padding: 0 .5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-family: "Droid Sans Mono", "Roboto", "Open Sans", sans-serif;
         cursor: pointer;
         background-color: #CCCCCC;
@@ -266,17 +266,20 @@ body {
     text-decoration: none;
     font-size: 1.2rem;
     color: white; }
-  #home-id.home .dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: inline-block; }
-  #home-id.home .active {
-    transform: scale(2);
-    border: 1px solid #fff;
-    background: transparent; }
+  #home-id.home .dots {
+    margin-left: 90%;
+    transform: translateY(-50%); }
+    #home-id.home .dots .dot {
+      height: 8px;
+      width: 8px;
+      margin: 12px 20px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: block; }
+    #home-id.home .dots .active {
+      transform: scale(2);
+      border: 1px solid #fff;
+      background: transparent; }
   #home-id.home .fade {
     animation-name: fade;
     animation-duration: 1.5s; }
@@ -300,14 +303,30 @@ body {
       #home-id.home h1 {
         font-size: 3.2rem; }
       #home-id.home h2 {
-        font-size: 1.6rem; } }
+        font-size: 1.6rem; }
+      #home-id.home .dots {
+        margin-left: 0;
+        margin-top: 8rem;
+        transform: translateY(0); }
+        #home-id.home .dots .dot {
+          height: 7px;
+          width: 7px;
+          margin: 10px 8px;
+          display: inline-block; } }
   @media only screen and (max-width: 400px) {
     #home-id.home h1 {
       font-size: 2.8rem; }
     #home-id.home h2 {
       font-size: 1.2rem; }
     #home-id.home a {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+    #home-id.home .dots {
+      margin-top: 5rem; }
+      #home-id.home .dots .dot {
+        height: 4px;
+        width: 4px;
+        margin: 5px 4px;
+        display: inline-block; } }
   @media only screen and (max-width: 320px) {
     #home-id.home {
       height: 100vh; }
@@ -398,7 +417,7 @@ body {
       top: 0;
       bottom: 0;
       padding: 0 .5rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-family: "Droid Sans Mono", "Roboto", "Open Sans", sans-serif;
       cursor: pointer;
       background-color: #CCCCCC;
