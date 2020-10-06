@@ -58,6 +58,9 @@ var slideIndex = 0;
 showSlides();
 
 function showSlides() {
+
+  $('#home-id').toggleClass('seen');
+
   var i;
   var img = ['../img/latest-autumn-fashion-trends-for-women-wallpaper-preview.jpg','../img/mens-fashion-trends-2020.jpg',
               '../img/people-man-travel-fashion.jpg','../img/mens-fashion-trends-2020.jpg',
@@ -88,5 +91,5 @@ function showSlides() {
   
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000);
+  setTimeout(showSlides, 3000);
 }
