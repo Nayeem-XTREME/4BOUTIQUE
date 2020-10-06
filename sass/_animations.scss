@@ -56,6 +56,32 @@
 }
 
 
+.btn-shop-now{
+    cursor: pointer;
+    transition: all .2s;
+    
+    &:link{
+        padding: 1rem 4rem;
+        
+        border: 1px solid white;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        background-color: white;
+        color: black;
+    }
+    &:active{
+         transform: translateY(-1px);
+     }
+     &:focus {
+         outline: none;
+         animation: pulsate 1s infinite;
+     }
+}
+
+
+
 
 // Raisa
 #ham-nav.sidebar-fullscreen {
@@ -71,6 +97,3 @@
 }
 
 
-//hell0
-
-//test-comment

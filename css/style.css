@@ -711,6 +711,22 @@ body {
 .sidebar-items li a:focus {
   outline: none; }
 
+.btn-shop-now {
+  cursor: pointer;
+  transition: all .2s; }
+  .btn-shop-now:link {
+    padding: 1rem 4rem;
+    border: 1px solid white; }
+  .btn-shop-now:hover {
+    transform: translateY(-3px);
+    background-color: white;
+    color: black; }
+  .btn-shop-now:active {
+    transform: translateY(-1px); }
+  .btn-shop-now:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
+
 #ham-nav.sidebar-fullscreen {
   transition: transform .5s; }
 
