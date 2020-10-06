@@ -248,8 +248,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /* Fading animation */ }
+  align-items: center; }
   #home-id.home .mobile-logo {
     display: none; }
   #home-id.home h1, #home-id.home h2 {
@@ -266,29 +265,6 @@ body {
     text-decoration: none;
     font-size: 1.2rem;
     color: white; }
-  #home-id.home .dots {
-    margin-left: 90%;
-    transform: translateY(-50%); }
-    #home-id.home .dots .dot {
-      height: 8px;
-      width: 8px;
-      margin: 12px 20px;
-      background-color: #fff;
-      border-radius: 50%;
-      display: block; }
-    #home-id.home .dots .active {
-      transform: scale(2);
-      border: 1px solid #fff;
-      background: transparent; }
-  #home-id.home .fade {
-    animation-name: fade;
-    animation-duration: 1.5s; }
-
-@keyframes fade {
-  from {
-    opacity: .4; }
-  to {
-    opacity: 1; } }
   #home-id.home .next-section {
     position: absolute;
     bottom: 5rem; }
@@ -339,6 +315,50 @@ body {
         #home-id.home .mobile-logo img {
           height: 1.5rem; } }
 
+#home-id.home {
+  /* Fading animation */ }
+  #home-id.home .dots {
+    margin-left: 90%;
+    transform: translateY(-50%); }
+    #home-id.home .dots .dot {
+      height: 8px;
+      width: 8px;
+      margin: 12px 20px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: block; }
+    #home-id.home .dots .active {
+      transform: scale(2);
+      border: 1px solid #fff;
+      background: transparent; }
+  #home-id.home .fade {
+    animation-name: fade;
+    animation-duration: 1.5s; }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+  @media only screen and (max-width: 768px) {
+    #home-id.home .dots {
+      margin-left: 0;
+      margin-top: 8rem;
+      transform: translateY(0); }
+      #home-id.home .dots .dot {
+        height: 7px;
+        width: 7px;
+        margin: 10px 8px;
+        display: inline-block; } }
+  @media only screen and (max-width: 400px) {
+    #home-id.home .dots {
+      margin-top: 5rem; }
+      #home-id.home .dots .dot {
+        height: 4px;
+        width: 4px;
+        margin: 5px 4px;
+        display: inline-block; } }
+
 #ham-nav.sidebar-fullscreen {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -352,8 +372,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 2.4rem;
-  transform: translateX(-100%);
-  transition: transform .5s; }
+  transform: translateX(-100%); }
   #ham-nav.sidebar-fullscreen .hamburger-menu {
     display: flex;
     justify-content: space-between;
@@ -425,6 +444,9 @@ body {
       outline: none; }
     #ham-nav.sidebar-fullscreen .footer .social {
       margin-top: 2rem; }
+
+#ham-nav.sidebar-fullscreen {
+  transition: transform .5s; }
 
 #ham-nav.visible {
   transform: translateX(0); }

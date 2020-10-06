@@ -1,0 +1,10 @@
+#ham-nav.sidebar-fullscreen {
+    transition: transform .5s;
+}
+
+#ham-nav.visible {
+    transform: translateX(0);
+}
+#ham-nav.cross-screen {
+    transform: translateX(-100%);
+}

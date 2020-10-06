@@ -20,7 +20,6 @@
 
     // Animate here
     transform: translateX(-100%);
-    transition: transform .5s;
 
     .hamburger-menu {
         display: flex;
@@ -138,9 +137,3 @@
     }
 }
 
-#ham-nav.visible {
-    transform: translateX(0);
-}
-#ham-nav.cross-screen {
-    transform: translateX(-100%);
-}
