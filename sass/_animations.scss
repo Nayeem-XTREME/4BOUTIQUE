@@ -1,3 +1,4 @@
+// Shihab
 .icons-navbar {
     &:link {
         img {
@@ -52,4 +53,19 @@
             &:focus { outline: none; }
         }
     }
+}
+
+
+
+// Raisa
+#ham-nav.sidebar-fullscreen {
+    transition: transform .5s;
+}
+
+#ham-nav.visible {
+    transform: translateX(0);
+}
+
+#ham-nav.cross-screen {
+    transform: translateX(-100%);
 }

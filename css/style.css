@@ -61,6 +61,50 @@ body {
   font-family: 'Droid Sans Mono';
   src: url("../fonts/DroidSansMono.ttf"); }
 
+#home-id.home {
+  /* Fading animation */ }
+  #home-id.home .dots {
+    margin-left: 90%;
+    transform: translateY(-50%); }
+    #home-id.home .dots .dot {
+      height: 8px;
+      width: 8px;
+      margin: 12px 20px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: block; }
+    #home-id.home .dots .active {
+      transform: scale(2);
+      border: 1px solid #fff;
+      background: transparent; }
+  #home-id.home .fade {
+    animation-name: fade;
+    animation-duration: 1.5s; }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+  @media only screen and (max-width: 768px) {
+    #home-id.home .dots {
+      margin-left: 0;
+      margin-top: 8rem;
+      transform: translateY(0); }
+      #home-id.home .dots .dot {
+        height: 7px;
+        width: 7px;
+        margin: 10px 8px;
+        display: inline-block; } }
+  @media only screen and (max-width: 400px) {
+    #home-id.home .dots {
+      margin-top: 5rem; }
+      #home-id.home .dots .dot {
+        height: 4px;
+        width: 4px;
+        margin: 5px 4px;
+        display: inline-block; } }
+
 .sidebar {
   line-height: 1.6;
   background-color: transparent;
@@ -208,6 +252,8 @@ body {
   z-index: 10; }
   .header .sticky-mobile-logo {
     display: none; }
+  .header__black {
+    display: none; }
   .header__logo {
     position: absolute;
     display: none; }
@@ -280,6 +326,7 @@ body {
     .sticky .header__white {
       display: none; }
     .sticky .header__black {
+      display: block;
       margin-top: -1rem; }
       .sticky .header__black .header__buttons {
         margin-top: -1rem; } }
@@ -493,12 +540,6 @@ body {
     #ham-nav.sidebar-fullscreen .menu {
       margin-top: 11.5rem; } }
 
-#ham-nav.visible {
-  transform: translateX(0); }
-
-#ham-nav.cross-screen {
-  transform: translateX(-100%); }
-
 .content {
   grid-row: 1 / 2;
   grid-column: 2 / -1;
@@ -669,3 +710,12 @@ body {
 
 .sidebar-items li a:focus {
   outline: none; }
+
+#ham-nav.sidebar-fullscreen {
+  transition: transform .5s; }
+
+#ham-nav.visible {
+  transform: translateX(0); }
+
+#ham-nav.cross-screen {
+  transform: translateX(-100%); }

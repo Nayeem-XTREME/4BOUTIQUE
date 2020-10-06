@@ -10,6 +10,10 @@
         display: none;;
     }
 
+    &__black {
+        display: none;
+    }
+
     &__logo {
         position: absolute;
         display: none;
@@ -145,6 +149,7 @@
         }
 
         .header__black {
+            display: block;
             margin-top: -1rem;
 
             .header__buttons {
