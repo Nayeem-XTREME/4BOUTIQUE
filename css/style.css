@@ -724,9 +724,28 @@ body {
   .btn-shop-now:active {
     transform: translateY(-1px); }
   .btn-shop-now:focus {
-    outline: none;
-    animation: pulsate 1s infinite; }
+    outline: none; }
 
+/*-------grid image hover effect starts here-------*/
+/*
+.content{
+
+    //overflow: hidden;
+
+    &__card-1 {  
+        background-size: 100%;
+        // background-position: center;
+         opacity: 0.8;
+         transition: all 0.2s;
+    }
+
+    &__card-1:hover {
+        opacity: 1;
+        background-size: 150%;  
+    }   
+}
+*/
+/*-------grid image hover effect ends here-------*/
 #ham-nav.sidebar-fullscreen {
   transition: transform .5s; }
 
