@@ -703,7 +703,7 @@ body {
 
 .sidebar-items li a:hover {
   color: #C8A985;
-  font-size: 2rem; }
+  font-size: 1.2em; }
 
 .sidebar-items li a:active {
   transform: translateY(-1px); }
