@@ -1,5 +1,7 @@
 // Raisa
 #home-id.home {
+ // transform: translateX(-100%);
+ // transition: transform 2s;
     .dots {
         position: absolute;
         right: 4.5rem;
@@ -90,4 +92,8 @@
             }
         }
     }
+}
+
+#home-id.hide {
+  transform: translateX(-100%);
 }

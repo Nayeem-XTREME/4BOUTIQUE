@@ -126,6 +126,9 @@ body {
         width: 5px;
         margin: .3rem; } }
 
+#home-id.hide {
+  transform: translateX(-100%); }
+
 .sidebar {
   line-height: 1.6;
   background-color: transparent;
