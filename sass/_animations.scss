@@ -35,6 +35,7 @@
     &:focus { outline: none; }
 }
 
+
 .sidebar-items {
     li {
         a {
@@ -44,7 +45,7 @@
 
             &:hover {
                 color: $color-brown;
-                font-size: 2rem;
+                font-size: 1.2em;
             }
 
             &:active {
@@ -54,6 +55,55 @@
         }
     }
 }
+
+
+
+.btn-shop-now{
+    cursor: pointer;
+    transition: all .2s;
+    
+    &:link{
+        padding: 1rem 4rem;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        background-color: white;
+        color: black;
+    }
+    &:active{
+         transform: translateY(-1px);
+     }
+     &:focus {
+         outline: none;
+     }
+}
+
+
+
+
+
+/*-------grid image hover effect starts here-------*/
+/*
+.content{
+
+    //overflow: hidden;
+
+    &__card-1 {  
+        background-size: 100%;
+        // background-position: center;
+         opacity: 0.8;
+         transition: all 0.2s;
+    }
+
+    &__card-1:hover {
+        opacity: 1;
+        background-size: 150%;  
+    }   
+}
+*/
+/*-------grid image hover effect ends here-------*/
+
 
 
 
@@ -69,3 +119,5 @@
 #ham-nav.cross-screen {
     transform: translateX(-100%);
 }
+
+

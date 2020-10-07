@@ -3,52 +3,78 @@
   transform: translateX(-100%);
   transition: transform 1s;
     .dots {
-        margin-left: 90%;
-        transform: translateY(-50%);
+        position: absolute;
+        right: 2.5rem;
 
         .dot {
             height: 8px;
             width: 8px;
             margin: 12px 20px;
             background-color: #fff;
+            display: flex;
             border-radius: 50%;
-            display: block;
-          }
-          .active {
+            margin: 2.6rem;
+        }
+
+        .active {
             transform: scale(2);
             border: 1px solid #fff;
             background: transparent;
-          }
+        }
+    }
+    
+      
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+      
+    @keyframes fade {
+        from {
+            opacity: .4
+        } 
+        to {
+            opacity: 1
+        }
     }
 
-      @media only screen and (max-width: $tablet-portrait) {
+
+    @media only screen and (max-width: $tablet-portrait) {
         .dots {
-            margin-left: 0;
-            margin-top: 8rem;
-            transform: translateY(0);
-    
+            right: auto;
+            bottom: 7rem;
+
             .dot {
-                height: 7px;
-                width: 7px;
-                margin: 10px 8px;
                 display: inline-block;
-              }
+                margin: 1rem;
+            }
         }
-    
     }
 
-    @media only screen and (max-width: $pre-mobile) {
+    @media only screen and (max-width: $mobile) {
         .dots {
-            margin-top: 5rem;
-    
             .dot {
-                height: 4px;
-                width: 4px;
-                margin: 5px 4px;
-                display: inline-block;
-              }
+                margin: .5rem;
+            }
         }
-    
+    }
+
+    // @media only screen and (max-height: $pre-mobile-h) {
+    //     .dots {
+    //         bottom: 5rem;
+    //     }
+    // }
+
+    @media only screen and (max-height: 700px) {
+        .dots {
+            bottom: 6rem;
+            .dot {
+                height: 5px;
+                width: 5px;
+                margin: .3rem;
+            }
+        }
     }
 }
 
