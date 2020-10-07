@@ -58,25 +58,28 @@
 
 
 
-.btn-shop-now{
+.btn-shop-now {
     cursor: pointer;
     transition: all .2s;
     
-    &:link{
-        padding: 1rem 4rem;
+    &:link {
+        padding: .8rem 4rem;
     }
 
     &:hover {
         transform: translateY(-3px);
         background-color: white;
+        box-shadow: 0 1px 10px black;
         color: black;
     }
-    &:active{
+
+    &:active {
          transform: translateY(-1px);
-     }
-     &:focus {
+    }
+
+    &:focus {
          outline: none;
-     }
+    }
 }
 
 
