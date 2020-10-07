@@ -44,7 +44,7 @@
 
     .next-section {
         position: absolute;
-        bottom: 5rem;
+        bottom: 3rem;
     }
 
     @media only screen and (max-width: $tablet-landscape) {
@@ -63,10 +63,13 @@
     
         h1 {
             font-size: 3.2rem;
+            margin-bottom: 2rem;
         }
     
         h2 {
             font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 2rem;
         }
     
     }
@@ -103,6 +106,12 @@
             img {
                 height: 1.5rem;
             }
+        }
+    }
+
+    @media only screen and (max-height: $pre-mobile-h) {
+        h2 {
+            display: none;
         }
     }
 
