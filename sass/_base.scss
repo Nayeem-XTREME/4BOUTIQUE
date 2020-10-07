@@ -74,6 +74,11 @@ body {
         grid-template-columns: 1fr;
     }
 
+    @media only screen and (max-height: 650px) {
+        grid-template-rows: 12.8vh 87.2vh;
+        grid-template-columns: 1fr;
+    }
+
 }
 
 .row-2 {
@@ -96,6 +101,11 @@ body {
     }
 
     @media only screen and (max-width: $mobile) {
+        grid-template-rows: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    @media only screen and (max-height: 650px) and (max-width: $tablet-landscape) {
         grid-template-rows: 100%;
         grid-template-columns: 1fr;
     }
