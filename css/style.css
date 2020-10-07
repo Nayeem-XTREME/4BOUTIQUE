@@ -402,8 +402,6 @@ body {
     .home h1 {
       font-size: 2.8rem; }
     .home h2 {
-      font-size: 1.2rem; }
-    .home a {
       font-size: 1rem; } }
   @media only screen and (max-width: 320px) {
     .home {
@@ -416,7 +414,7 @@ body {
         top: 2rem; }
         .home .mobile-logo img {
           height: 1.5rem; } }
-  @media only screen and (max-height: 820px) {
+  @media only screen and (max-height: 650px) and (max-width: 768px) {
     .home h2 {
       display: none; } }
 
@@ -663,6 +661,8 @@ body {
       font-size: 1.6rem; }
     .content .box .block_1 h2 {
       font-size: 2rem; }
+    .content .box .block_1 a {
+      font-size: 1.2rem; }
     .content .box a {
       font-size: .9rem; } }
   @media only screen and (max-width: 400px) {
@@ -752,8 +752,7 @@ body {
   cursor: pointer;
   transition: all .2s; }
   .btn-shop-now:link {
-    padding: 1rem 4rem;
-    border: 1px solid white; }
+    padding: 1rem 4rem; }
   .btn-shop-now:hover {
     transform: translateY(-3px);
     background-color: white;

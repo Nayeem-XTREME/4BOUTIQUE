@@ -81,12 +81,9 @@
         }
     
         h2 {
-            font-size: 1.2rem;
-        }
-
-        a {
             font-size: 1rem;
         }
+
     
     }
 
@@ -109,7 +106,7 @@
         }
     }
 
-    @media only screen and (max-height: $pre-mobile-h) {
+    @media only screen and (max-height: 650px) and (max-width: $tablet-portrait) {
         h2 {
             display: none;
         }
