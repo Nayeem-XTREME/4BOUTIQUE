@@ -843,15 +843,21 @@ body {
 */
 /*-------grid image hover effect ends here-------*/
 /*--------Text Shadow in grid starts here----------*/
-h1 {
-  text-shadow: 2px 2px rgba(51, 47, 47, 0.904); }
+/*
+h1:hover{
+    text-shadow: 2px 2px rgba(51, 47, 47, 0.904);
+}
 
-h2 {
-  text-shadow: 2px 2px rgba(42, 37, 37, 0.904); }
+h2:hover{
+    text-shadow: 2px 2px rgba(42, 37, 37, 0.904);
+}
 
-.content__block h2 {
-  text-shadow: 2px 2px rgba(36, 28, 28, 0.904); }
-
+.content__block{
+    h2:hover{
+        text-shadow: 2px 2px rgba(36, 28, 28, 0.904);
+    }
+}
+*/
 /*--------Text Shadow in grid ends here----------*/
 #ham-nav.sidebar-fullscreen {
   transition: transform .5s; }
