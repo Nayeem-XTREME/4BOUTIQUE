@@ -59,9 +59,11 @@ $(function() {
 
  function showSlides() { 
    var i;
-   var img = ['../img/latest-autumn-fashion-trends-for-women-wallpaper-preview.jpg','../img/mens-fashion-trends-2020.jpg',
-               '../img/people-man-travel-fashion.jpg','../img/mens-fashion-trends-2020.jpg',
-               '../img/hugo-boss-black-ss-2012-mark-vanderloo-3.jpg'];
+   var img = ['../img/hugo-boss-black-ss-2012-mark-vanderloo-3.jpg',
+              '../img/120913_Boga_1801_2.jpg',
+              '../img/pexels-burst-374044.jpg',
+              '../img/pexels-david-bartus-297933.jpg',
+              '../img/pexels-artem-beliaikin-994517.jpg'];
 
    var slides = document.getElementsByClassName("mySlides");
    var dots = document.getElementsByClassName("dot");
@@ -70,10 +72,6 @@ $(function() {
    for (i = 0; i < slides.length; i++) {
      slides[i].style.display = "none";
    }
-
-   //slide left-to-right animation
-  // $(".home").animate({left: '-100%'},0.1);
-  // $(".home").animate({left: '0'},300);
 
 
   //slider opacity animation
@@ -90,6 +88,7 @@ $(function() {
    img.push(imgs);
 
    home.style.backgroundImage='url(' + img[slideIndex-1] + ')';
+   home.style.backgroundSize="cover";
    
 
    for (i = 0; i < dots.length; i++) {

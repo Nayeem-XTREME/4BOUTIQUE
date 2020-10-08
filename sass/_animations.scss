@@ -44,8 +44,8 @@
             }
 
             &:hover {
-                color: $color-brown;
-                font-size: 1.2em;
+                color: $color-brown !important;
+                font-size: 1.5em;
             }
 
             &:active {
