@@ -57,13 +57,12 @@
 }
 
 
-
 .btn-shop-now {
     cursor: pointer;
     transition: all .2s;
     
     &:link {
-        padding: .8rem 4rem;
+        padding: .8rem 2rem;
     }
 
     &:hover {
@@ -81,6 +80,31 @@
          outline: none;
     }
 }
+
+.btn-shop-small {
+    cursor: pointer;
+    
+    &:link {
+        padding: .4rem .8rem;
+        transition: all .2s;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+        background-color: white;
+        box-shadow: 0 1px 10px black;
+        color: black !important;
+    }
+
+    &:active {
+         transform: translateY(-1px);
+    }
+
+    &:focus {
+         outline: none;
+    }
+}
+
 
 
 
@@ -107,8 +131,21 @@
 */
 /*-------grid image hover effect ends here-------*/
 
+/*--------Text Shadow in grid starts here----------*/
+h1{
+    text-shadow: 2px 2px rgba(51, 47, 47, 0.904);
+}
 
+h2{
+    text-shadow: 2px 2px rgba(42, 37, 37, 0.904);
+}
 
+.content__block{
+    h2{
+        text-shadow: 2px 2px rgba(36, 28, 28, 0.904);
+    }
+}
+/*--------Text Shadow in grid ends here----------*/
 
 // Raisa
 #ham-nav.sidebar-fullscreen {
