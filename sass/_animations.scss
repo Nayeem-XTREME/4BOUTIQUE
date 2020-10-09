@@ -80,16 +80,13 @@
          outline: none;
     }
 
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
 }
 
 .btn-shop-small {
     cursor: pointer;
     
     &:link {
-        padding: .4rem .8rem;
+        padding: .4rem .1rem;
         transition: border-bottom 0.1s;
     }
 
@@ -98,102 +95,41 @@
     }
 }
 
-
-
-
-
-
-/*-------grid image hover effect starts here-------*/
-/*
-.content{
-
-    //overflow: hidden;
-
-    &__card-1 {  
-        background-size: 100%;
-        // background-position: center;
-         opacity: 0.8;
-         transition: all 0.2s;
-    }
-
-    &__card-1:hover {
-        opacity: 1;
-        background-size: 150%;  
-    }   
-}
-*/
-/*-------grid image hover effect ends here-------*/
-
-/*--------Text Shadow in grid starts here----------*/
-/*
-h1:hover{
-    text-shadow: 2px 2px rgba(51, 47, 47, 0.904);
-}
-
-h2:hover{
-    text-shadow: 2px 2px rgba(42, 37, 37, 0.904);
-}
-
-.content__block{
-    h2:hover{
-        text-shadow: 2px 2px rgba(36, 28, 28, 0.904);
-    }
-}
-*/
-/*--------Text Shadow in grid ends here----------*/
-
 .home{
 
-    h1{
+    h1 {
         animation-name: moveInDown;
         animation-duration: 1s;
         animation-timing-function: ease-out;
     }
-    h2{
+    h2 {
         animation-name: moveInUp;
         animation-duration: 1s;
         animation-timing-function: ease-out;
     }
 }
 
-@keyframes moveInUp{
-    0%{
+@keyframes moveInUp {
+    0% {
         opacity: 0;
-        transform: translateY(150px);
+        transform: translateY(50px);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0px);
     }
 }
 
-@keyframes moveInDown{
-    0%{
+@keyframes moveInDown {
+    0% {
         opacity: 0;
-        transform: translateY(-150px);
+        transform: translateY(-50px);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0px);
     }
 }
-
-@keyframes moveInLeft{
-    0%{
-        opacity: 0;
-        transform: translateX(-100px) rotate(0deg);
-    }
-    80%{
-        transform: translateX(20px) rotate(180deg);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-
-
 
 
 // Raisa
@@ -210,3 +146,45 @@ h2:hover{
 }
 
 
+// Nayeem
+@keyframes bgChange {
+    0% {
+        background-position: center;
+    }
+    100% {
+        background-position: left;
+    }
+}
+
+.content {
+
+    &__card-1:hover {
+        animation: bgChange 10s;
+        padding: .2rem;
+    }
+
+    &__card-2:hover {
+        animation: bgChange 2s;
+        padding: .2rem;
+    }
+
+    &__card-3:hover {
+        animation: bgChange 2s;
+        padding: .2rem;
+    }
+
+    &__card-4:hover {
+        animation: bgChange 10s;
+        padding: .2rem;
+    }
+
+    &__card-5:hover {
+        animation: bgChange 10s;
+        padding: .2rem;
+    }
+
+    &__card-6:hover {
+        animation: bgChange 10s;
+        padding: .2rem;
+    }
+}
