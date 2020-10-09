@@ -41,6 +41,18 @@ $font-size-secondary: 1rem;
                 text-decoration: none;
                 color: white;
             }
+
+            li:nth-child(1) {
+                margin-bottom: 2.5rem;
+            }
+
+            li:nth-child(5) {
+                margin-bottom: 2.5rem;
+            }
+
+            li:nth-child(6) {
+                margin-bottom: 2.5rem;
+            }
         } 
 
         .footer {

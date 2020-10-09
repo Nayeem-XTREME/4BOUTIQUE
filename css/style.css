@@ -156,6 +156,12 @@ body {
       .sidebar__container ul li a {
         text-decoration: none;
         color: white; }
+      .sidebar__container ul li:nth-child(1) {
+        margin-bottom: 2.5rem; }
+      .sidebar__container ul li:nth-child(5) {
+        margin-bottom: 2.5rem; }
+      .sidebar__container ul li:nth-child(6) {
+        margin-bottom: 2.5rem; }
     .sidebar__container .footer {
       font-size: 1rem; }
       .sidebar__container .footer a {
@@ -226,6 +232,12 @@ body {
       .sidebar-black__container ul li a {
         text-decoration: none;
         color: #999999; }
+      .sidebar-black__container ul li:nth-child(1) {
+        margin-bottom: 2.5rem; }
+      .sidebar-black__container ul li:nth-child(5) {
+        margin-bottom: 2.5rem; }
+      .sidebar-black__container ul li:nth-child(6) {
+        margin-bottom: 2.5rem; }
     .sidebar-black__container .footer {
       font-size: 1rem; }
       .sidebar-black__container .footer a {
