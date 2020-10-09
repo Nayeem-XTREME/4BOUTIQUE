@@ -1,5 +1,6 @@
 .home {
-    background-image: linear-gradient(rgba($color-landing, .8), rgba(black, .8)), url('../img/hugo-boss-black-ss-2012-mark-vanderloo-3.jpg');
+    // background-image: linear-gradient(rgba($color-landing, .8), rgba(black, .8)), url('../img/hugo-boss-black-ss-2012-mark-vanderloo-3.jpg');
+    background-color: black;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -29,6 +30,7 @@
     h1 {
         font-size: 3.8rem;
         margin-bottom: 2rem;
+        text-shadow: 0 2px 5px black;
     }
 
     h2 {

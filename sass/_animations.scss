@@ -160,31 +160,41 @@
 
     &__card-1:hover {
         animation: bgChange 10s;
-        padding: .2rem;
+        // margin: 2rem;
+        border: 5px solid $color-gray-mid;
     }
 
     &__card-2:hover {
         animation: bgChange 2s;
-        padding: .2rem;
+        border: 5px solid $color-gray-mid;
     }
 
     &__card-3:hover {
         animation: bgChange 2s;
-        padding: .2rem;
+        border: 5px solid $color-gray-mid;
     }
 
     &__card-4:hover {
         animation: bgChange 10s;
-        padding: .2rem;
+        border: 5px solid $color-gray-mid;
     }
 
     &__card-5:hover {
         animation: bgChange 10s;
-        padding: .2rem;
+        border: 5px solid $color-gray-mid;
     }
 
     &__card-6:hover {
         animation: bgChange 10s;
-        padding: .2rem;
+        border: 5px solid $color-gray-mid;
+    }
+
+    &__block {
+        h2 {
+            transition: all .5s;
+        }
+        h2:hover {
+            text-shadow: 0 1px 20px black;
+        }
     }
 }
