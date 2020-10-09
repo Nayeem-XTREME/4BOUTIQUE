@@ -76,7 +76,7 @@ $(function() {
 
   //slider opacity animation
   $(".home").animate({opacity: '.6'},1);
-  $(".home").animate({opacity: '.9'},1000);
+  $(".home").animate({opacity: '.95'},1000);
   
    slideIndex++;
 

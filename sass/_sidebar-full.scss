@@ -47,7 +47,7 @@
     }
 
     .menu {
-        
+
         ul {
             display: flex;
             flex-direction: column;
@@ -64,15 +64,15 @@
             }
 
             li:nth-child(1) {
-                margin-bottom: 2rem;
+                margin-bottom: 5rem;
+            }
+
+            li:nth-child(5) {
+                margin-bottom: 5rem;
             }
 
             li:nth-child(6) {
-                margin-bottom: 2rem;
-            }
-
-            li:nth-child(8) {
-                margin-bottom: 2rem;
+                margin-bottom: 5rem;
             }
         }
     }
@@ -145,22 +145,8 @@
         }
     }
 
-    @media only screen and (max-width: $pre-mobile) {
+    @media only screen and (max-width: 425px) {
         font-size: 1.6rem;
-        .hamburger-menu {
-            &__left {
-                a img {
-                    height: 1.6rem;
-                }
-            }
-            &__right {
-                margin-top: 0;
-            }
-        }
-        
-    }
-
-    @media only screen and (max-width: $mobile) {
         .hamburger-menu {
             margin-top: -2rem;
             &__left {
@@ -171,7 +157,7 @@
                 a:nth-child(2) {
                     position: absolute;
                     left: 50%;
-                    top: 1.9rem;
+                    top: 1.5rem;
                     transform: translate(-50%, 0);
                 }
             }
@@ -197,15 +183,55 @@
                 display: flex;
                 justify-content: center;
                 background-color: gray;
-                height: 10.6rem;
+                height: 10rem;
                 width: 100%;
-
+                font-size: 1.6rem;
                 margin: 1px;
             }
         }
 
         .menu {
-            margin-top: 11.5rem;
+            margin-top: 12rem;
+        }
+
+        .footer .combo {
+            margin-bottom: 0;
+        }
+    }
+
+    @media only screen and (max-height: 800px) {
+        .menu {
+            ul {
+                li:nth-child(1) {
+                    margin-bottom: 3rem;
+                }
+    
+                li:nth-child(5) {
+                    margin-bottom: 3rem;
+                }
+    
+                li:nth-child(6) {
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-height: 720px) {
+        .menu {
+            ul {
+                li:nth-child(1) {
+                    margin-bottom: 2rem;
+                }
+    
+                li:nth-child(5) {
+                    margin-bottom: 2rem;
+                }
+    
+                li:nth-child(6) {
+                    margin-bottom: 2rem;
+                }
+            }
         }
     }
 }
