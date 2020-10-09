@@ -899,16 +899,9 @@ body {
   cursor: pointer; }
   .btn-shop-small:link {
     padding: .4rem .8rem;
-    transition: all .2s; }
+    transition: border-bottom 0.1s; }
   .btn-shop-small:hover {
-    transform: translateY(-5px);
-    background-color: white;
-    box-shadow: 0 1px 10px black;
-    color: black !important; }
-  .btn-shop-small:active {
-    transform: translateY(-1px); }
-  .btn-shop-small:focus {
-    outline: none; }
+    border-bottom: 2px solid #fff; }
 
 /*-------grid image hover effect starts here-------*/
 /*

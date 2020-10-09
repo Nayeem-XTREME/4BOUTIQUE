@@ -86,22 +86,11 @@
     
     &:link {
         padding: .4rem .8rem;
-        transition: all .2s;
+        transition: border-bottom 0.1s;
     }
 
     &:hover {
-        transform: translateY(-5px);
-        background-color: white;
-        box-shadow: 0 1px 10px black;
-        color: black !important;
-    }
-
-    &:active {
-         transform: translateY(-1px);
-    }
-
-    &:focus {
-         outline: none;
+        border-bottom: 2px solid #fff;
     }
 }
 
@@ -148,6 +137,9 @@ h2:hover{
 }
 */
 /*--------Text Shadow in grid ends here----------*/
+
+
+
 
 // Raisa
 #ham-nav.sidebar-fullscreen {
