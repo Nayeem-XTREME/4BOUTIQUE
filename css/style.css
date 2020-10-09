@@ -784,7 +784,7 @@ body {
   .copy-block {
     color: black;
     font-size: 1rem;
-    font-family: 'Open Sans';
+    font-family: 'Abel', sans-serif;
     font-weight: 400;
     display: flex;
     width: 100%;
