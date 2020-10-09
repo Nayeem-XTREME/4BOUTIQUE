@@ -400,7 +400,7 @@ body {
     margin-bottom: 2rem; }
   .home h2 {
     font-size: 1.8rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 5rem; }
   .home a {
     text-decoration: none;
     font-size: 1.2rem;
@@ -422,7 +422,12 @@ body {
       .home h2 {
         font-size: 1.6rem;
         margin-top: 0;
-        margin-bottom: 1rem; } }
+        margin-bottom: 2rem; } }
+  @media only screen and (max-width: 490px) {
+    .home h1 {
+      font-size: 2.8rem; }
+    .home h2 {
+      font-size: 1.2rem; } }
   @media only screen and (max-width: 400px) {
     .home h1 {
       font-size: 2.8rem; }
@@ -590,7 +595,9 @@ body {
     .content .box h2 {
       font-size: 2.4rem;
       font-weight: 100;
-      margin-bottom: 1.5rem; }
+      line-height: 1.4;
+      margin-bottom: 1.6rem;
+      margin-top: 0; }
     .content .box a {
       text-transform: uppercase;
       text-decoration: none;
@@ -669,14 +676,15 @@ body {
       margin-left: 3rem;
       margin-top: 8rem;
       padding-bottom: 3rem;
+      margin-bottom: 3.5rem;
       border-bottom: 1.5px solid #C8A985; } }
   @media only screen and (max-width: 768px) {
     .content {
       grid-gap: .2rem;
       margin: 0rem;
       padding-bottom: 0;
-      padding-bottom: 1rem;
-      margin-bottom: 2rem;
+      padding-bottom: 1.2rem;
+      margin-bottom: 3.5rem;
       border-bottom: 1.5px solid #C8A985; }
       .content .box h2 {
         font-size: 2rem; }
@@ -703,7 +711,8 @@ body {
   @media only screen and (max-width: 320px) {
     .content {
       grid-template-rows: 23rem repeat(2, 15.2rem) repeat(3, 30rem);
-      grid-template-columns: 1fr; }
+      grid-template-columns: 1fr;
+      padding-bottom: 8.5rem; }
       .content .box .block_1 {
         top: 50%;
         left: 50%;
@@ -762,6 +771,80 @@ body {
     .content .box h2 {
       margin-bottom: .5rem; } }
 
+.row-2 {
+  position: relative; }
+
+.copy-block {
+  display: none; }
+
+.back-to-top {
+  display: none; }
+
+@media only screen and (max-width: 1024px) {
+  .copy-block {
+    color: black;
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    padding: 0 3rem; }
+    .copy-block .btn-groups {
+      display: flex;
+      max-width: 40rem;
+      justify-content: space-between;
+      overflow-x: hidden; }
+      .copy-block .btn-groups :not(:first-child) {
+        margin-left: 1.2rem; }
+      .copy-block .btn-groups a {
+        text-decoration: none;
+        color: black; } }
+
+@media only screen and (max-width: 768px) {
+  .copy-block {
+    padding: 0 2rem; } }
+
+@media only screen and (max-width: 552px) {
+  .content {
+    margin-bottom: 5rem; }
+  .copy-block {
+    flex-direction: column;
+    align-items: center;
+    bottom: 1rem; }
+    .copy-block p {
+      margin: 0; }
+    .copy-block .btn-groups {
+      margin: 0;
+      margin-bottom: .4rem;
+      order: -1;
+      width: 90%; }
+      .copy-block .btn-groups a {
+        color: #C8A985; } }
+
+@media only screen and (max-width: 320px) {
+  .back-to-top {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    bottom: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .back-to-top p {
+      color: black;
+      font-size: 1rem;
+      padding-top: 1rem;
+      margin-left: 1rem; } }
+
+@media only screen and (max-width: 318px) {
+  .copy-block {
+    padding: 0 1rem; }
+    .copy-block .btn-groups {
+      width: 95%; } }
+
 .icons-navbar:link img {
   transition: transform 0.2s; }
 
@@ -789,7 +872,7 @@ body {
 
 .sidebar-items li a:hover {
   color: #C8A985 !important;
-  font-size: 1.5em; }
+  font-size: 1.2em; }
 
 .sidebar-items li a:active {
   transform: translateY(-1px); }
@@ -801,7 +884,7 @@ body {
   cursor: pointer;
   transition: all .2s; }
   .btn-shop-now:link {
-    padding: .8rem 2rem; }
+    padding: .4rem 3rem; }
   .btn-shop-now:hover {
     transform: translateY(-3px);
     background-color: white;

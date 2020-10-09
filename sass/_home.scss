@@ -33,7 +33,7 @@
 
     h2 {
         font-size: 1.8rem;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
     }
 
     a {
@@ -69,9 +69,21 @@
         h2 {
             font-size: 1.6rem;
             margin-top: 0;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
     
+    }
+
+    @media only screen and (max-width: 490px) {
+
+        h1 {
+            font-size: 2.8rem;
+        }
+    
+        h2 {
+            font-size: 1.2rem;
+        }
+
     }
 
     @media only screen and (max-width: $pre-mobile) {
