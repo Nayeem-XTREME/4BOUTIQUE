@@ -8,6 +8,7 @@
         
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/vendors/fullpage.min.css">
         <link rel="stylesheet" href="css/style.css">
@@ -23,7 +24,7 @@
             <div id="ham-nav" class="sidebar-fullscreen">
                 <div class="block hamburger-menu">
                     <div class="hamburger-menu__left">
-                        <a id="ham-cross" href="#" onclick="return false;" class="cross">
+                        <a id="ham-cross" href="#" onclick="return false;" class="cross icons-sidebar">
                             <img src="./icons/Mobile Menu_Cross.svg" alt="Hamburger Cross">
                         </a>
                         <a href="#">
@@ -32,13 +33,13 @@
                     </div>
     
                     <div class="hamburger-menu__right">
-                        <a href="#">
-                            <img src="./icons/Icon search_Gold.svg" alt="Search Gold">
+                        <a href="#" class="icons-navbar">
+                            <img src="./icons/Icon search_Gold.svg" alt="Search Gold" >
                         </a>
-                        <a href="#">
+                        <a href="#" class="icons-navbar">
                             <img src="./icons/Icon heart_Gold.svg" alt="Heart Gold">
                         </a>
-                        <a href="#">
+                        <a href="#" class="icons-navbar">
                             <img src="./icons/Icon bag_Gold.svg" alt="Bag Gold">
                         </a>
                     </div>
@@ -79,15 +80,17 @@
     
                 <div class="block footer">
     
+                    
                     <form>
                         <label for="language">Language:</label>
                         <select id="language" name="cars">
-                            <option value="en">English</option>
-                            <option value="bn">Bangla</option>
+                            <option value="en">ENGLISH</option>
+                            <option value="bn">BENGALI</option>
                         </select>
                     </form>
-    
-                    <a href="#">Store locator</a>
+                    <div class="combo">
+                        <a href="#">Store locator</a>
+                    </div>
     
                     <label for="newsletter">Newsletter</label>
     
@@ -97,10 +100,10 @@
                     </form>
     
                     <div class="social">
-                        <a href="#"><img src="./icons/Icon facebook.svg" alt="facebook"></a>
-                        <a href="#"><img src="./icons/Icon twitter.svg" alt="twitter"></a>
-                        <a href="#"><img src="./icons/Icon google plus.svg" alt="google plus"></a>
-                        <a href="#"><img src="./icons/Icon tumblr.svg" alt="tumblr"></a>
+                        <a href="#" class="icons-sidebar"><img src="./icons/Icon facebook.svg" alt="facebook"></a>
+                        <a href="#" class="icons-sidebar"><img src="./icons/Icon twitter.svg" alt="twitter"></a>
+                        <a href="#" class="icons-sidebar"><img src="./icons/Icon google plus.svg" alt="google plus"></a>
+                        <a href="#" class="icons-sidebar"><img src="./icons/Icon tumblr.svg" alt="tumblr"></a>
                     </div>
                 </div>
             </div>
@@ -132,16 +135,18 @@
                         </ul>
             
                         <div class="item footer">
-        
-                            <form>
-                                <label for="language">Language:</label>
-                                <select id="language" name="cars">
-                                    <option value="en">English</option>
-                                    <option value="bn">Bangla</option>
-                                </select>
-                            </form>
-        
-                            <a href="#">Store locator</a>
+                            
+                            <div class="combo">
+                                <form>
+                                    <label for="language">Language:</label>
+                                    <select id="language" name="cars">
+                                        <option value="en">ENGLISH</option>
+                                        <option value="bn">BENGALI</option>
+                                    </select>
+                                </form>
+                                <a href="#">Store locator</a>
+                            </div>
+                            
                             <!-- <br><br><br><br> -->
         
                             <label for="newsletter">Newsletter</label>
@@ -166,7 +171,9 @@
                     <!-- BLACK Nav -->
                     <div class="header__black">
                         <div class="header__logo header__logo__black">
-                            <a id="ham-black" href="#" onclick="return false;"><img class="header__logo--mobile" src="./icons/Mobile Menu_Black.svg" alt="Mobile Menu"></a>
+
+                            <a class="icons-sidebar" id="ham-black" href="#" onclick="return false;"><img class="header__logo--mobile" src="./icons/Mobile Menu_Black.svg" alt="Mobile Menu"></a>
+                            
                             <a href="#"><img class="header__logo--logo" src="./icons/4BOUTIQUE_Black.svg" alt="4BOUTIQUE"></a>
                         </div>
             
@@ -190,7 +197,7 @@
                     <!-- White Nav -->
                     <div class="header__white">
                         <div class="header__logo header__logo__white">
-                            <a id="ham" href="#"><img class="header__logo--mobile" src="./icons/Mobile Menu.svg" alt="Mobile Menu"></a>
+                            <a class="icons-sidebar" id="ham" href="#"><img class="header__logo--mobile" src="./icons/Mobile Menu.svg" alt="Mobile Menu"></a>
                             <a href="#"><img class="header__logo--logo" src="./icons/4BOUTIQUE.svg" alt="4BOUTIQUE"></a>
                         </div>
             
@@ -277,15 +284,16 @@
             
                         <div class="item footer">
         
-                            <form>
-                                <label for="language">Language:</label>
-                                <select id="language" name="cars">
-                                    <option value="en">English</option>
-                                    <option value="bn">Bangla</option>
-                                </select>
-                            </form>
-        
-                            <a href="#">Store locator</a>
+                            <div class="combo">
+                                <form>
+                                    <label for="language">Language:</label>
+                                    <select id="language" name="cars">
+                                        <option value="en">ENGLISH</option>
+                                        <option value="bn">BENGALI</option>
+                                    </select>
+                                </form>
+                                <a href="#">Store locator</a>
+                            </div>
                             <!-- <br><br><br><br> -->
         
                             <label for="newsletter">Newsletter</label>
@@ -310,19 +318,19 @@
                     <div class="box content__card-1">
                         <div class="content__block block_1">
                             <h2>GET INTO THE <br> NEW SEASON’S MOOD</h2>
-                            <a href="#">Shop now</a>
+                            <a href="#" class="btn-shop-small">Shop now</a>
                         </div>
                     </div>
                     <div class="box content__card-2">
                         <div class="content__block block_2">
                             <h2>THE WEEKEND <br> WONDER</h2>
-                            <a href="#">Shop men</a>
+                            <a href="#"  class="btn-shop-small">Shop men</a>
                         </div>
                     </div>
                     <div class="box content__card-3">
                         <div class="content__block  block_3">
                             <h2>THE BEST <br> AUTUMN BUYS</h2>
-                            <a href="#">Shop women</a>
+                            <a href="#"  class="btn-shop-small">Shop women</a>
                         </div>
                     </div>
                     <div class="box content__card-4">
@@ -347,6 +355,23 @@
                         </a>
                     </div>
                 </section>
+
+                <!-- ONLY MOBILE -->
+                <div class="back-to-top">
+                    <a href="#home-id">
+                        <img src="./icons/Icon arrow circle up.svg" alt="">
+                    </a>
+                    <p>BACT TO TOP</p>
+                </div>
+
+                <div class="copy-block">
+                    <p>&#169; 2015 4BOUTIQUE THEME. ALL RIGHTS RESERVED.</p>
+                    <div class="btn-groups">
+                        <a href="#">FAQS</a>
+                        <a href="#">PRIVACY POLICY</a>
+                        <a href="#">TERMS & CONDITIONS</a>
+                    </div>
+                </div>
             </section> 
         </div>
 
