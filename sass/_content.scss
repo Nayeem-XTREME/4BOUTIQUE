@@ -99,66 +99,42 @@
         grid-row: 1 / 3;
         grid-column: 1 / 8;
 
-        background-image: linear-gradient(rgba($color-gray, .7), rgba(black, .7)), url('../img/photo-1470309864661-68328b2cd0a5.jpg');
-        transition: all .5s;
-    }
-    &__card-1:hover {
-        // background-size: 150%;
+        background-image: linear-gradient(rgba($color-gray, .7), rgba(black, .7)), url('../img/grid-1.jpg');
     }
 
     &__card-2 {
         grid-row: 1 / 2;
         grid-column: 8 / -1;
 
-        background-image: linear-gradient(rgba($color-brown, .7), rgba(black, .7)), url('../img/men-131523.jpg');
-        transition: all .5s;
-    }
-    &__card-2:hover {
-        // background-size: 150%;
+        background-image: linear-gradient(rgba($color-brown, .7), rgba(black, .7)), url('../img/grid-2.jpg');
     }
 
     &__card-3 {
         grid-row: 2 / 3;
         grid-column: 8 / -1;
 
-        background-image: linear-gradient(rgba($color-brown-light, .7), rgba(black, .7)), url('../img/latest-autumn-fashion-trends-for-women-wallpaper-preview.jpg');
-        transition: all .5s;
-    }
-    &__card-3:hover {
-        // background-size: 150%;
+        background-image: linear-gradient(rgba($color-brown-light, .7), rgba(black, .7)), url('../img/grid-3.jpg');
     }
 
     &__card-4 {
         grid-row: 3 / 3;
         grid-column: 1 / 5;
 
-        background-image: linear-gradient(rgba($color-gray-mid, .7), rgba(black, .7)), url('../img/e5e54018daa8ba88d7f96fc942cd333f.jpg');
-        transition: all .5s;
-    }
-    &__card-4:hover {
-        // background-size: 150%;
+        background-image: linear-gradient(rgba($color-gray-mid, .7), rgba(black, .7)), url('../img/grid-4.jpg');
     }
 
     &__card-5 {
         grid-row: 3 / 3;
         grid-column: 5 / 9;
 
-        background-image: linear-gradient(rgba($color-gray-light, .7), rgba(black, .7)), url('../img/3907c41616c1bdec6a582573b1915b86.jpg');
-        transition: all .5s;
-    }
-    &__card-5:hover {
-        // background-size: 150%;
+        background-image: linear-gradient(rgba($color-gray-light, .7), rgba(black, .7)), url('../img/grid-5.jpg');
     }
 
     &__card-6 {
         grid-row: 3 / 3;
         grid-column: 9 / -1;
 
-        background-image: linear-gradient(rgba($color-gray-mid, .7), rgba(black, .7)), url('../img/people-man-travel-fashion.jpg');
-        transition: all .5s;
-    }
-    &__card-6:hover {
-        // background-size: 150%;
+        background-image: linear-gradient(rgba($color-gray-mid, .7), rgba(black, .7)), url('../img/grid-6.jpg');
     }
 
 
