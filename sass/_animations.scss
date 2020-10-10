@@ -79,75 +79,58 @@
     &:focus {
          outline: none;
     }
+
 }
 
 .btn-shop-small {
     cursor: pointer;
     
     &:link {
-        padding: .4rem .8rem;
-        transition: all .2s;
+        padding: .4rem .1rem;
+        transition: border-bottom 0.1s;
     }
 
     &:hover {
-        transform: translateY(-5px);
-        background-color: white;
-        box-shadow: 0 1px 10px black;
-        color: black !important;
-    }
-
-    &:active {
-         transform: translateY(-1px);
-    }
-
-    &:focus {
-         outline: none;
+        border-bottom: 2px solid #fff;
     }
 }
 
+.home{
 
-
-
-
-
-/*-------grid image hover effect starts here-------*/
-/*
-.content{
-
-    //overflow: hidden;
-
-    &__card-1 {  
-        background-size: 100%;
-        // background-position: center;
-         opacity: 0.8;
-         transition: all 0.2s;
+    h1 {
+        animation-name: moveInDown;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
     }
+    h2 {
+        animation-name: moveInUp;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+}
 
-    &__card-1:hover {
+@keyframes moveInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
         opacity: 1;
-        background-size: 150%;  
-    }   
-}
-*/
-/*-------grid image hover effect ends here-------*/
-
-/*--------Text Shadow in grid starts here----------*/
-/*
-h1:hover{
-    text-shadow: 2px 2px rgba(51, 47, 47, 0.904);
-}
-
-h2:hover{
-    text-shadow: 2px 2px rgba(42, 37, 37, 0.904);
-}
-
-.content__block{
-    h2:hover{
-        text-shadow: 2px 2px rgba(36, 28, 28, 0.904);
+        transform: translateY(0px);
     }
 }
-*/
-/*--------Text Shadow in grid ends here----------*/
+
+@keyframes moveInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 
 // Raisa
 #ham-nav.sidebar-fullscreen {
@@ -163,3 +146,55 @@ h2:hover{
 }
 
 
+// Nayeem
+@keyframes bgChange {
+    0% {
+        background-position: center;
+    }
+    100% {
+        background-position: left;
+    }
+}
+
+.content {
+
+    &__card-1:hover {
+        animation: bgChange 10s;
+        // margin: 2rem;
+        border: 5px solid $color-gray-mid;
+    }
+
+    &__card-2:hover {
+        animation: bgChange 2s;
+        border: 5px solid $color-gray-mid;
+    }
+
+    &__card-3:hover {
+        animation: bgChange 2s;
+        border: 5px solid $color-gray-mid;
+    }
+
+    &__card-4:hover {
+        animation: bgChange 10s;
+        border: 5px solid $color-gray-mid;
+    }
+
+    &__card-5:hover {
+        animation: bgChange 10s;
+        border: 5px solid $color-gray-mid;
+    }
+
+    &__card-6:hover {
+        animation: bgChange 10s;
+        border: 5px solid $color-gray-mid;
+    }
+
+    &__block {
+        h2 {
+            transition: all .5s;
+        }
+        h2:hover {
+            text-shadow: 0 1px 20px black;
+        }
+    }
+}

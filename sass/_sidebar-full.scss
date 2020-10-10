@@ -47,7 +47,7 @@
     }
 
     .menu {
-        
+
         ul {
             display: flex;
             flex-direction: column;
@@ -64,15 +64,15 @@
             }
 
             li:nth-child(1) {
-                margin-bottom: 2rem;
+                margin-bottom: 5rem;
+            }
+
+            li:nth-child(5) {
+                margin-bottom: 5rem;
             }
 
             li:nth-child(6) {
-                margin-bottom: 2rem;
-            }
-
-            li:nth-child(8) {
-                margin-bottom: 2rem;
+                margin-bottom: 5rem;
             }
         }
     }
@@ -119,7 +119,7 @@
                 border: 1px solid $color-gray-mid;
                 background-color: transparent;
                 color: $color-gray-mid;
-                font-family: $font-primary;
+                font-family: $font-secondary;
                 // width: 15rem;
                 // height: 2rem;
                 padding: .25rem 1rem;
@@ -145,22 +145,8 @@
         }
     }
 
-    @media only screen and (max-width: $pre-mobile) {
-        font-size: 1.6rem;
-        .hamburger-menu {
-            &__left {
-                a img {
-                    height: 1.6rem;
-                }
-            }
-            &__right {
-                margin-top: 0;
-            }
-        }
-        
-    }
-
     @media only screen and (max-width: $mobile) {
+        font-size: 1.6rem;
         .hamburger-menu {
             margin-top: -2rem;
             &__left {
@@ -171,7 +157,7 @@
                 a:nth-child(2) {
                     position: absolute;
                     left: 50%;
-                    top: 1.9rem;
+                    top: 1.5rem;
                     transform: translate(-50%, 0);
                 }
             }
@@ -195,17 +181,73 @@
 
             a {
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 background-color: gray;
-                height: 10.6rem;
+                height: 10rem;
                 width: 100%;
-
+                font-size: 1.6rem;
                 margin: 1px;
+
+                transition: all .2s;
+
+                h6 {
+                    color: white;
+                    margin: 0;
+                    margin-top: 1.5rem;
+
+                    font-family: 'Abel', sans-serif;
+                }
+            }
+
+            a:active {
+                background-color: rgb(85, 85, 85);
             }
         }
 
         .menu {
-            margin-top: 11.5rem;
+            margin-top: 12rem;
+        }
+
+        .footer .combo {
+            margin-bottom: 0;
+        }
+    }
+
+    @media only screen and (max-height: 800px) {
+        .menu {
+            ul {
+                li:nth-child(1) {
+                    margin-bottom: 3rem;
+                }
+    
+                li:nth-child(5) {
+                    margin-bottom: 3rem;
+                }
+    
+                li:nth-child(6) {
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-height: 720px) {
+        .menu {
+            ul {
+                li:nth-child(1) {
+                    margin-bottom: 2rem;
+                }
+    
+                li:nth-child(5) {
+                    margin-bottom: 2rem;
+                }
+    
+                li:nth-child(6) {
+                    margin-bottom: 2rem;
+                }
+            }
         }
     }
 }
