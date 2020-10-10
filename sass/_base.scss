@@ -11,15 +11,17 @@ $color-button: #979797;
 $color-main-text: white;
 
 $font-primary: 'Droid Sans Mono', 'Roboto', 'Open Sans', sans-serif;
+$font-secondary: 'Abel', sans-serif;
 $font-size-desktop: 62.5%; // 10px / 16px = 62.5% = 1rem
 $font-size-tablet: 50%; // 8px / 16px = 50% = 1rem
+$font-size-secondary: 50%;
 
 
 // MEDIA QUERIES
 $tablet-landscape: 1024px;
 $tablet-portrait: 768px;
 $pre-mobile: 400px;
-$mobile: 320px;
+$mobile: 425px;
 
 // Special MEDIA QUERIES
 $pre-mobile-h: 820px;
@@ -55,6 +57,8 @@ body {
     grid-template-rows: 12.8vh 87.2vh;
     grid-template-columns: 26rem 1fr;
 
+    background-color: black;
+
     @media only screen and (max-width: $tablet-landscape) {
         grid-template-rows: 12.8vh 87.2vh;
         grid-template-columns: 1fr;
@@ -63,7 +67,7 @@ body {
     }
 
     @media only screen and (max-width: $tablet-portrait) {
-        grid-template-rows: 6vh 40vh;
+        grid-template-rows: 6vh 38vh;
         grid-template-columns: 1fr;
 
         font-size: $font-size-tablet;
@@ -94,7 +98,7 @@ body {
     }
 
     @media only screen and (max-width: $tablet-portrait) {
-        grid-template-rows: 54vh;
+        grid-template-rows: 56vh;
         grid-template-columns: 1fr;
 
         font-size: $font-size-tablet;
