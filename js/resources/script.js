@@ -59,11 +59,11 @@ $(function() {
 
  function showSlides() { 
    var i;
-   var img = ['../img/hugo-boss-black-ss-2012-mark-vanderloo-3.jpg',
-              '../img/120913_Boga_1801_2.jpg',
-              '../img/pexels-burst-374044.jpg',
-              '../img/pexels-david-bartus-297933.jpg',
-              '../img/pexels-artem-beliaikin-994517.jpg'];
+   var img = ['img/hugo-boss-black-ss-2012-mark-vanderloo-3.jpg',
+              'img/120913_Boga_1801_2.jpg',
+              'img/pexels-burst-374044.jpg',
+              'img/pexels-david-bartus-297933.jpg',
+              'img/pexels-artem-beliaikin-994517.jpg'];
 
    var slides = document.getElementsByClassName("mySlides");
    var dots = document.getElementsByClassName("dot");
@@ -75,7 +75,7 @@ $(function() {
 
 
   //slider opacity animation
-  $(".home").animate({opacity: '.6'},1);
+  $(".home").animate({opacity: '.5'},1);
   $(".home").animate({opacity: '.95'},1000);
   
    slideIndex++;
@@ -96,5 +96,5 @@ $(function() {
    }
    slides[slideIndex-1].style.display = "block";  
    dots[slideIndex-1].className += " active";
-   setTimeout(showSlides, 3000);
+   setTimeout(showSlides, 6000);
  }
