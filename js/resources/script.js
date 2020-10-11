@@ -75,7 +75,7 @@ $(function() {
 
 
   //slider opacity animation
-  $(".home").animate({opacity: '.6'},1);
+  $(".home").animate({opacity: '.5'},1);
   $(".home").animate({opacity: '.95'},1000);
   
    slideIndex++;
@@ -96,5 +96,5 @@ $(function() {
    }
    slides[slideIndex-1].style.display = "block";  
    dots[slideIndex-1].className += " active";
-   setTimeout(showSlides, 3000);
+   setTimeout(showSlides, 6000);
  }
