@@ -5,11 +5,17 @@ CDP - Spring Rain
 Use `npm` to run the app
 
 ### 1st: Enter the command to the terminal
-```sh
+```
 npm install
 ```
 
 ### 2nd: Then Enter this command to run the app
-```sh
+```
 npm start
+```
+
+
+## The project is LIVE here:
+```
+https://4boutique.netlify.app/
 ```
